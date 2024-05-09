@@ -1,0 +1,248 @@
+﻿### Try to keep tags in alphabetical order if it's not too far gone, please.
+
+################################################################
+## DEFAULT COUNTRY NAMES EXAMPLE CAN BE USED WITH ANY COUNTRY ##
+################################################################
+
+# Uncomment when need a dynamic_country_name for any country
+
+SIC = { # Two Sicilies
+	dynamic_country_name = {
+		name = dyn_c_sicily
+		adjective = dyn_c_sicily_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				owns_entire_state_region = STATE_SICILY
+				NOT = { owns_entire_state_region = STATE_CAMPANIA }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_naples
+		adjective = dyn_c_naples_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					AND = {
+						NOT = { owns_entire_state_region = STATE_SICILY }
+						owns_entire_state_region = STATE_CAMPANIA
+					}
+					coa_def_subject_trigger = yes
+				}
+			}
+		}
+	}
+}
+
+GWC = { # West Indies
+	dynamic_country_name = {
+		name = dyn_c_west_indies
+		adjective = dyn_c_west_indies_adj
+		use_overlord_prefix = yes
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}
+
+MUG = { # Hindustan
+	dynamic_country_name = {
+		name = dyn_c_mughal_empire
+		adjective = dyn_c_mughal_empire_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_mughal_empire
+			}
+		}
+	}
+}
+
+NET = { # Dutch Republic
+	dynamic_country_name = {
+		name = dyn_c_dutch_republic
+		adjective = NET_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_dutch_republic
+			}
+		}
+	}
+}
+
+BEL = { # Belgium
+	dynamic_country_name = {
+		name = dyn_c_netherlands
+		adjective = dyn_c_netherlands_adj
+		use_overlord_prefix = yes
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_united_belgian_states
+		adjective = BEL_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+}
+
+UKR = { # Ukraine
+	dynamic_country_name = {
+		name = dyn_c_free_territory
+		adjective = dyn_c_free_territory_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_cossack_host
+		adjective = dyn_c_cossack_host_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_government_type = gov_hetmanate
+			}
+		}
+	}
+}
+
+QUE = { # Quebec
+	dynamic_country_name = {
+		name = dyn_c_lower_canada
+		adjective = dyn_c_lower_canada_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:QUE
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_new_france
+		adjective = QUE_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				is_subject_of = c:FRA
+				OR = {
+					is_subject_type = subject_type_puppet
+					is_subject_type = subject_type_dominion
+				}
+			}
+		}
+	}
+}
+
+DAI = { # Dai Nam
+	dynamic_country_name = {
+		name = dyn_c_trinh
+		adjective = dyn_c_trinh_adj
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				owns_entire_state_region = STATE_TONKIN
+				NOT = {	owns_entire_state_region = STATE_ANNAM }
+			}
+		}
+	}
+}
+
+RAM = { # Nguyen
+	dynamic_country_name = {
+		name = DAI
+		adjective = DAI_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				owns_entire_state_region = STATE_TONKIN
+				owns_entire_state_region = STATE_ANNAM
+			}
+		}
+	}
+}
+
+LAT = { # Latvia
+	dynamic_country_name = {
+		name = dyn_c_livonia
+		adjective = dyn_c_livonia_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				is_subject_of = c:SWE
+			}
+		}
+	}
+}

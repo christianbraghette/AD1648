@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:KOR = {
+		create_character = {
+			# Heonjong of Joseon
+			first_name = "Jong"
+			last_name = "Li"
+			ruler = yes
+			birth_date = 1595.12.7
+			dna = dna_king_heonjong
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+		}	
+	}
+}
+

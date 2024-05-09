@@ -1,0 +1,136 @@
+﻿has_law_serfdom_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_throughput_mult = -0.3
+}
+has_law_tenant_farmers_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_throughput_mult = -0.15
+}
+
+kazaki_revolution_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_mult = -0.2
+	country_bureaucracy_mult = -0.2
+	state_standard_of_living_add = -1
+}
+spain_crisis_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_mult = -0.1
+	country_bureaucracy_mult = -0.1
+}
+
+rebuild_eba_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_conscription_rate_add = 0.01
+}
+
+ibe_break_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_mult = -0.1
+	country_bureaucracy_mult = -0.1
+	unit_defense_mult = -0.7
+	unit_offense_mult = -0.7
+}
+
+ibe_break_effect_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_mult = -0.1
+	country_bureaucracy_mult = -0.1
+	unit_defense_mult = -0.5
+	unit_offense_mult = -0.5
+}
+
+victory_pru_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	unit_defense_mult = 0.5
+	unit_offense_mult = 0.5
+	unit_morale_protection_mult = 0.5
+}
+
+turky_weak_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_mult = -0.25
+	country_bureaucracy_mult = -0.5
+}
+
+cizye_tax_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	tax_heathen_add = 0.2
+	state_conscription_rate_add = -0.01
+}
+
+hre_emperor = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_conscription_rate_add = 0.02
+}
+
+
+han_army_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_conscription_rate_add = 0.02
+}
+
+man_army_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+		unit_defense_mult = 0.1
+		unit_offense_mult = 0.1
+}
+
+
+help_china_income_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_tax_income_add = -3000
+
+}
+
+por_gun_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+		unit_defense_mult = 0.25
+		unit_offense_mult = 0.25
+		state_conscription_rate_add = 0.05
+		building_arms_industry_throughput_mult = 0.5
+}
+
+net_gun_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+		unit_defense_mult = 0.25
+		unit_offense_mult = 0.25
+		state_conscription_rate_add = 0.05
+		building_artillery_industry_throughput_mult = 0.5
+}
+
+por_rev_pre_1_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	unit_defense_mult = 0.2
+	unit_offense_mult = 0.2
+	unit_morale_protection_mult = 0.1
+	tax_income_add = 0.5
+}
+por_rev_pre_2_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	unit_defense_mult = 0.4
+	unit_offense_mult = 0.4
+	unit_morale_protection_mult = 0.2
+	tax_income_add = 0.5
+}
+por_rev_pre_3_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	unit_defense_mult = 0.6
+	unit_offense_mult = 0.6
+	unit_morale_protection_mult = 0.3
+	tax_income_add = 0.5
+}
+por_rev_pre_4_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	unit_defense_mult = 0.8
+	unit_offense_mult = 0.8
+	unit_morale_protection_mult = 0.4
+	tax_income_add = 0.5
+}
+por_rev_pre_5_effect = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	unit_defense_mult = 1
+	unit_offense_mult = 1
+	unit_morale_protection_mult = 0.5
+	tax_income_add = 0.5
+}

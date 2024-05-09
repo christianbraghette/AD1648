@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:RAM = {
+		create_character = {
+			# Minh Mang
+			first_name = "Phuc_Lan" 
+			last_name = "Nguyen"
+			ruler = yes
+			birth_date = 1601.8.13			
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				bigoted			
+			}
+		}	
+	}
+}

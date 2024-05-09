@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:PER = {
+		create_character = {
+			# Mohammad Shah Qajar
+			is_general = yes
+			first_name = "Abbas II"
+			last_name = "Safavid"
+			ruler = yes
+			birth_date = 1632.12.31
+			dna = dna_king_mohammad_shah_qajar
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				ambitious
+			}
+		}	
+	}
+}

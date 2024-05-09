@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:MUG = {
+		create_character = {
+			# Ranjit Singh
+			is_general = yes
+			first_name = "Shah_Jahan"
+			last_name = "Singh"
+			ruler = yes
+			birth_date = 1592.1.5
+			dna = dna_maharaja_ranjit_singh
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			hq = region_north_india
+			commander_rank = commander_rank_3
+			traits = {
+				ambitious
+			}
+		}	
+	}
+}

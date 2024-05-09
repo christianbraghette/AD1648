@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:PAP = {
+		create_character = {
+			# Gregory XVI
+			first_name = "INNOCENTIUS_X"
+			last_name = "Cappellari"
+			ruler = yes
+			birth_date = 1574.5.6
+			dna = dna_pope_gregory_16
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = {
+			}
+		}
+	}
+}

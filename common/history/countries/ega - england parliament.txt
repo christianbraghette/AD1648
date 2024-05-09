@@ -1,0 +1,34 @@
+﻿COUNTRIES = {
+	c:EGA = {
+        set_next_election_date = 1650.1.1
+		effect_starting_technology_tier_1_tech = yes
+
+		#add_journal_entry = { type = tov_je_glorious_rev }
+		
+		#ig:ig_petty_bourgeoisie = {
+		#	add_ruling_interest_group = yes
+		#}
+		effect_starting_pop_literacy_baseline = yes	
+		effect_starting_pop_wealth_low = yes
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_frontier_colonization		
+		activate_law = law_type:law_landed_voting		
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_no_health_system
+		activate_law = law_type:law_no_home_affairs
+		activate_law = law_type:law_serfdom_free
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_mercantilism
+		#add_journal_entry = { type = je_england_civ_war }
+	}
+}

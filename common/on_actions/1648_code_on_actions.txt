@@ -1,0 +1,12 @@
+﻿on_monthly_pulse_country = {
+	events = {
+		#1648_ai.events.1
+		urk_event.1
+		qing_lord.1
+		1648_colony.1
+		1648_colony.2
+		1648_colony.3
+		#qing_lord.3
+	}
+}
+

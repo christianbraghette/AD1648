@@ -1,0 +1,20 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:CHI = {
+		create_diplomatic_play = {
+			name = ming_qing_war
+		
+			target_state = s:STATE_GUANGDONG.region_state:MIN
+			
+			war = yes
+			
+			type = dp_unify_china
+
+			add_war_goal = {
+				holder = c:MIN
+				type = annex_country
+				target_state = s:STATE_BEIJING.region_state:CHI
+			}
+		}			
+	}
+
+}

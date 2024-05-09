@@ -1,0 +1,21 @@
+﻿DIPLOMATIC_PLAYS = {
+	#c:MUG = {
+	#	create_diplomatic_play = {
+	#		name = rule_central_asia
+	#		target_state = s:STATE_EASTERN_AFGHANISTAN.region_state:PER
+	#		war = yes
+	#		type = dp_conquer_state
+	#		add_war_goal = {
+	#			holder = c:MUG
+	#			type = conquer_state
+	#			target_state = s:STATE_WESTERN_AFGHANISTAN.region_state:MUG
+	#		}			
+	#		add_war_goal = {
+	#			holder = c:PER
+	#			type = conquer_state
+	#			target_state = s:STATE_BALUCHISTAN.region_state:MUG
+	#		}
+	#	}			
+	#}
+
+}

@@ -1,0 +1,29 @@
+﻿COUNTRIES = {
+	c:MOD = {
+		effect_starting_technology_tier_2_tech = yes
+		
+		effect_starting_politics_reactionary = yes
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_no_colonial_affairs
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_no_health_system
+		activate_law = law_type:law_no_home_affairs
+		activate_law = law_type:law_serfdom_free
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_mercantilism		
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}

@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:MIN = {
+		create_character = {
+			first_name = Youlang
+			last_name = "Zhu" 
+			ruler = yes
+			birth_date = 1623.11.1
+			#dna = dna_daoguang_emperor
+			culture = cu:han
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				reserved
+			}
+		}
+	}
+}

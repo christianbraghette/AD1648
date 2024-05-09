@@ -1,0 +1,538 @@
+﻿BUILDINGS={
+	s:STATE_ECUADOR={
+		region_state:PEU={
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_GUAYANA={
+		region_state:GWC={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+		}
+		region_state:FRA={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+		}
+	}
+	s:STATE_ZULIA={
+		region_state:PEU={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+		}
+		region_state:GWC={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+		}
+	}
+	s:STATE_MIRANDA={
+		region_state:PEU={
+		}
+		region_state:ORN={
+		}
+		
+	}
+	s:STATE_BOLIVAR={
+		region_state:ORN={
+		}
+	}
+	s:STATE_ANTIOQUIA={
+		region_state:PEU={
+			create_building={
+				building="building_tobacco_plantation"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_sugar_plantation"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}	
+		}
+	}
+	s:STATE_GUAVIARE={
+		region_state:MUI={			
+		}
+	}
+	s:STATE_CUNDINAMARCA={
+		region_state:MUI={
+		}
+
+	}
+	s:STATE_CAUCA={
+		region_state:PEU={
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}			
+		}
+	}
+	s:STATE_PASTAZA={
+		region_state:MUI={
+		}
+	}
+	s:STATE_TARAPACA={
+		region_state:PEU={
+		}
+	}
+	s:STATE_ANTOFAGASTA={
+		region_state:PEU={
+		}
+	}
+	s:STATE_SANTA_CRUZ={
+		region_state:AYM={
+		}
+	}
+	s:STATE_LA_PAZ={
+		region_state:PEU={
+		}
+	}
+	s:STATE_POTOSI={
+		region_state:PEU={			
+		}
+	}
+	s:STATE_CAJAMARCA={
+		region_state:PEU={
+		}
+	}
+	s:STATE_LIMA={
+		region_state:PEU={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}		
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+			create_building={
+				building="building_iron_mine"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ICA={
+		region_state:PEU={
+		}
+	}
+	s:STATE_AREQUIPA={
+		region_state:PEU={		
+		}
+	}
+	s:STATE_URUGUAY={
+		region_state:GNI={
+		}
+	}
+	s:STATE_JUJUY={
+		region_state:PEU={
+		}
+	}
+	s:STATE_ALTO_PARAGUAY={
+		region_state:GNI={
+		}
+	}
+	s:STATE_BAJO_PARAGUAY={
+		region_state:GNI={
+		}
+	}
+	s:STATE_BUENOS_AIRES={
+		region_state:PAT={
+		}
+	}
+	s:STATE_PATAGONIA={
+		region_state:PAT={
+		}
+	}
+	s:STATE_RIO_NEGRO={
+		region_state:PAT={
+		}
+	}
+	s:STATE_LA_PAMPA={
+		region_state:PAT={	
+		}
+	}
+	s:STATE_SANTA_FE={
+		region_state:PEU={
+		}
+	}
+	s:STATE_CORRIENTES={
+		region_state:GNI={
+		}
+	}
+	s:STATE_TUCUMAN={
+		region_state:PEU={
+		}
+	}
+	s:STATE_CHACO={
+		region_state:PEU={
+			create_building={
+				building="building_tobacco_plantation"
+				level=2
+				reserves=1
+			}		
+		}
+	}
+	s:STATE_SANTIAGO={
+		region_state:PAT={
+		}
+	}
+	s:STATE_LOS_RIOS={
+		region_state:PAT={
+		}
+	}
+	s:STATE_ARAUCANIA={
+		region_state:SLK={
+		}
+		region_state:PAT={
+		}
+	}
+	s:STATE_SOUTH_ATLANTIC_ISLANDS={
+		region_state:PAT={
+		}
+	}
+	s:STATE_ACRE={
+		region_state:AYM={
+		}
+	}
+	s:STATE_AMAZONAS={
+		region_state:AMZ={
+		}
+	}
+	s:STATE_MATO_GROSSO={
+		region_state:AYM={		
+		}
+	}
+	s:STATE_RIO_GRANDE_DO_SUL={
+		region_state:TPI={
+		}
+	}
+	s:STATE_PARANA={
+		region_state:TPI={
+		}
+	}
+	s:STATE_SANTA_CATARINA={
+		region_state:TPI={
+		}
+	}
+	s:STATE_SAO_PAULO={
+		region_state:TPI={
+		}
+	}
+	s:STATE_MINAS_GERAIS={
+		region_state:TPI={
+		}
+	}
+	s:STATE_RIO_DE_JANEIRO={
+		region_state:BRZ={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_sugar_plantation"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_BAHIA={
+		region_state:BRZ={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tobacco_plantation"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}	
+		}
+	}
+	s:STATE_RIO_GRANDE_DO_NORTE={
+		region_state:GWC={
+			create_building={
+				building="building_tobacco_plantation"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_sugar_plantation"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_CEARA={
+		region_state:GWC={
+			create_building={
+				building="building_sugar_plantation"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_PIAUI={
+		region_state:BRZ={	
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tobacco_plantation"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}	
+		}
+	}
+	s:STATE_PARAIBA={
+		region_state:GWC={
+			create_building={
+				building="building_tobacco_plantation"
+				level=2
+				reserves=1
+			}			
+		}
+	}
+	s:STATE_PERNAMBUCO={
+		region_state:GWC={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+		}
+	}
+	s:STATE_MARANHAO={
+		region_state:BRZ={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_GOIAS={
+		region_state:TPI={
+		}
+	}
+	s:STATE_PARA={
+		region_state:AMZ={			
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

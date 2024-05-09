@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:DAI = {
+		create_character = {
+			# Minh Mang
+			first_name = "Chan_Tong"
+			last_name = "Le"
+			ruler = yes
+			birth_date = 1630.1.1
+			dna = dna_emperor_minh_mang
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				arrogant
+			}
+		}	
+	}
+}

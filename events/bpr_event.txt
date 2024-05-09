@@ -1,0 +1,91 @@
+namespace = bpr_event
+
+bpr_event.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = bpr_event.1.t
+	desc = bpr_event.1.d
+	flavor = bpr_event.1.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		
+	}
+
+	option = {
+		name = bpr_event.1.a
+	}	
+}
+
+bpr_event.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = bpr_event.2.t
+	desc = bpr_event.2.d
+	flavor = bpr_event.2.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		c:PEU = { is_player = no }
+	}
+
+	immediate = {	
+		set_global_variable = bpr_start
+	}
+
+	option = {
+		name = bpr_event.2.a
+		c:BPR = {
+			create_diplomatic_play = {
+				name = coq_pur
+				#war = yes
+				type = dp_conquer_state
+				target_state = s:STATE_WEST_PRUSSIA.region_state:PLC
+				
+				add_war_goal = {
+					holder = c:BPR
+					type = conquer_state
+					target_state = s:STATE_EAST_PRUSSIA.region_state:PLC
+				}
+				add_war_goal = {
+					holder = c:BPR
+					type = conquer_state
+					target_state = s:STATE_POSEN.region_state:PLC
+				}
+			}
+			add_modifier = { name = victory_pru_effect months = 60 }
+		}
+		ai_chance = {
+			base = 10
+		}		
+	}	
+	option = {
+		name = bpr_event.2.b
+		ai_chance = {
+			base = 1
+		}
+	}	
+}

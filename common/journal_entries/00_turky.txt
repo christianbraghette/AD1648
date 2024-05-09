@@ -1,0 +1,25 @@
+﻿je_turky = { #
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		is_at_war = no
+		has_law = law_type:law_multicultural
+	}
+
+	on_complete = {
+		remove_modifier = turky_weak_effect
+	}
+
+	on_monthly_pulse = {
+	}
+
+	fail = {
+	}
+
+	on_fail = {
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}

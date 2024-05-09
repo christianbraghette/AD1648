@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:SLW = {
+		create_character = {
+			# La Mappaseling, Sultan Adam Najamuddin
+			#role = politician # Remove this line
+			first_name = "La_Mappaseling"
+			last_name = "Bone"
+			ruler = yes
+			birth_date = 1599.1.12
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+		}
+	}
+}

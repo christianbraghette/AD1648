@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:MOR = {
+		create_character = {
+			# Abd al-Rahman of Morocco
+			first_name = "Mohammed esh Sheikh es Seghir"
+			last_name = "Bani Zaydan"
+			ruler = yes
+			birth_date = 1600.2.19
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				imperious
+			}
+		}	
+	}
+}

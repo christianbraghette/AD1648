@@ -1,0 +1,22 @@
+﻿CHARACTERS = {
+	c:CIR = {
+		create_character = {
+			# Ismail Berzeg
+			#role = politician # Remove this line
+			first_name = "Ismail"
+			last_name = "Berzeg"
+			birth_date = 1633.12.4
+			ruler = yes
+			hq = region_caucasus
+			is_general = yes
+			commander_rank = commander_rank_2
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				ambitious
+				forest_commander
+				brave
+			}
+		}
+	}
+}

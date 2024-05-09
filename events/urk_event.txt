@@ -1,0 +1,163 @@
+﻿namespace = urk_event
+
+# Start event for obsessed country
+urk_event.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = urk_event.1.t
+	desc = urk_event.1.d
+	flavor = urk_event.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:UKR
+		this = c:RUS
+		NOT = { has_global_variable = UKR_rev_done }	
+	}
+
+	immediate = {
+		set_global_variable = UKR_rev_done
+	}
+
+	option = {
+		name = urk_event.1.a
+		ai_chance = {
+			base = 5
+		}
+		c:PLC = {
+			trigger_event = { id = urk_event.2 }
+		}		
+		
+	}
+	option = {
+		name = urk_event.1.b
+		ai_chance = {
+			base = 1
+		}		
+	}	
+}
+
+urk_event.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = urk_event.2.t
+	desc = urk_event.2.d
+	flavor = urk_event.2.f
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = urk_event.2.a
+		ai_chance = {
+			base = 5
+		}
+		c:RUS = {
+			trigger_event = { id = urk_event.3 }
+		}		
+	}
+	option = {
+		name = urk_event.2.b
+		ai_chance = {
+			base = 1
+		}
+		c:RUS = {
+			trigger_event = { id = urk_event.4 }
+		}		
+	}	
+}
+
+urk_event.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = urk_event.3.t
+	desc = urk_event.3.d
+	flavor = urk_event.3.f
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		annex = c:UKR
+	}
+
+	option = {
+		name = urk_event.3.a
+		c:RUS = {
+			create_truce = {
+				country = c:PLC
+				months = 60
+			}
+		}
+	}	
+}
+
+urk_event.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = urk_event.4.t
+	desc = urk_event.4.d
+	flavor = urk_event.4.f
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:RUS = {
+			create_diplomatic_play = {
+				name = ukr_revolution
+				war = yes
+				type = dp_conquer_state
+				target_state = s:STATE_KIEV.region_state:UKR
+			}
+		}
+	}
+
+	option = {
+		name = urk_event.4.a	
+	}	
+}

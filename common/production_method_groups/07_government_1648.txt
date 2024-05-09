@@ -1,0 +1,188 @@
+﻿pmg_base_building_port = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_anchorage
+		pm_early_port
+		pm_basic_port
+		pm_industrial_port
+		pm_modern_port
+	}
+}
+
+pmg_base_building_government_administration = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_simple_organization
+		pm_write_read
+		pm_horizontal_drawer_cabinets
+		pm_vertical_filing_cabinets
+		pm_switch_boards
+	}
+}
+
+pmg_government_administration_bureaucrat_professionalism = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_hereditary_bureaucrats
+		pm_professional_bureaucrats
+	}
+}
+
+pmg_government_administration_religious_administration = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_religious_bureaucrats
+		pm_secular_bureaucrats
+	}
+}
+
+pmg_base_building_university = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_scholastic_education
+		pm_philosophy_department
+		pm_analytical_philosophy_department
+	}
+}
+
+pmg_university_academia = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_religious_academia
+		pm_secular_academia
+	}
+}
+
+pmg_base_building_skyscraper = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_skyscraper_bureaucratic_nexus
+		pm_skyscraper_trade_nexus				   
+	}
+}
+
+pmg_airship_mooring_post = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_no_airships
+		pm_airship_mooring_post
+	}
+}
+
+
+pmg_1648_weapon = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_1648_weapon_no
+		pm_1648_weapon_spear
+		pm_1648_weapon_gun
+	}
+}
+
+pmg_1648_cannon = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_1648_cannon_no
+		pm_1648_cannon_stone
+		pm_1648_cannon_simple
+	}
+}
+
+pmg_gov_service = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {	
+		pm_gov_server_no	
+		pm_gov_server_simple
+		pm_gov_service_hard
+		pm_gov_service_pro
+	}
+}
+
+pmg_gov_date = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {		
+		pm_gov_date_no
+		pm_gov_date_simple
+		pm_gov_date_normal
+	}
+}
+
+pmg_gov_emp = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive	
+	production_methods = {		
+		pm_gov_emp_no
+		pm_gov_emp_simple
+		pm_gov_emp_hard
+	}
+}
+
+pmg_school_base = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	
+	production_methods = {		
+		pm_school_base_simple
+		pm_school_base_medium
+		pm_school_base_hard
+	}
+}
+
+pmg_school_force = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	
+	production_methods = {		
+		pm_school_force_no
+		pm_school_force_yes
+		pm_school_force_merge
+	}
+}
+
+pmg_school_add = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	
+	production_methods = {		
+		pm_school_add_no
+		pm_school_add_health
+		pm_school_add_patriotic
+	}
+}
+
+pmg_road_type = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	#ai_selection = most_productive
+
+	production_methods = {
+		pm_mud_road
+		pm_stone_road
+	}
+}
+
+pmg_road_maintance = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	#ai_selection = most_productive
+
+	production_methods = {
+		pm_road_maintance_no
+		pm_road_maintance_simple
+	}
+}

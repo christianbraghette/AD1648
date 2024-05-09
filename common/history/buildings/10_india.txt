@@ -1,0 +1,579 @@
+﻿BUILDINGS={
+	s:STATE_BIHAR={
+		region_state:MUG={
+			create_building={
+				building="building_coal_mine"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_NORTH_BENGAL={
+		region_state:MUG={
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_ASSAM={
+		region_state:MUG={
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_DELHI={
+		region_state:MUG={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}	
+		}
+	}
+	s:STATE_AWADH={
+		region_state:MUG={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_stone" }
+			}
+		}
+	}
+	s:STATE_GUJARAT={
+		region_state:MUG={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+		}
+	}
+	s:STATE_CENTRAL_INDIA={
+		region_state:MUG={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_KASHMIR={
+		region_state:MUG={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_PUNJAB={
+		region_state:MUG={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_NAGPUR={
+		region_state:MUG={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_iron_mine"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_SOUTH_BENGAL={
+		region_state:MUG={
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_SINDH={
+		region_state:MUG={
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_RAJPUTANA={
+		region_state:MUG={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+		}
+	}
+	s:STATE_CEYLON={
+		region_state:CEY={	
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_INDIAN_OCEAN_TERRITORY={
+		region_state:MAD={
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ORISSA={
+		region_state:MUG={
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+			}		
+		}
+	}
+	s:STATE_CIRCARS={
+		region_state:TRA={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_MYSORE={
+		region_state:MYS={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_TRAVANCORE={
+		region_state:TRA={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_stone" }
+			}
+		}
+	}
+	s:STATE_MADRAS={
+		region_state:FRA={		
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+		region_state:TRA={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_HYDERABAD={
+		region_state:MYS={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_BOMBAY={
+		region_state:POR={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+		region_state:MYS={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_textile_mills"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

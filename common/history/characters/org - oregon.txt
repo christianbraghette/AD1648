@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:ORG = {
+		create_character = {
+			#role = politician # Remove this line
+			first_name = John
+			last_name = McLoughlin
+			age = 52
+			culture = cu:cherokee
+			ruler = yes
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			traits = {
+				tactful
+			}
+		}
+	}
+}

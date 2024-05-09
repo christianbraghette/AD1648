@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:ONT = {
+		create_character = {
+			#role = politician # Remove this line
+			first_name = "Francis_Bond"
+			last_name = "Head"
+			ruler = yes
+			ig_leader = yes
+			culture = cu:iroquoian
+			age = 43
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				arrogant
+			}
+		}
+	}
+}

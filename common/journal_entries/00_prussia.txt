@@ -1,0 +1,54 @@
+﻿je_prussia = { #
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		is_at_war = no
+		exists = c:PUR
+		c:PUR = ROOT
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:PUR
+				c:PUR = ROOT
+			}
+			trigger_event = { id = brp_event.1 }
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					exists = c:BPR
+					c:BPR = ROOT
+					c:BPR = { NOT = { has_global_variable = bpr_start } }
+					c:BPR =  { has_technology_researched = military_drill }
+					c:PLC = { owns_entire_state_region = STATE_WEST_PRUSSIA }
+				}
+				random_list = {
+					1 = { }
+					1 = {
+						c:BPR = {
+							trigger_event = { id = bpr_event.2 }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	fail = {
+	}
+
+	on_fail = {
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}

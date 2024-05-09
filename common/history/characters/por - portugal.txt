@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:POR = {
+		create_character = {
+			# Maria II of Portugal, second reign
+			first_name = "Joho"
+			last_name = "de_Braganca"
+			ruler = yes
+			birth_date = 1604.3.19
+			dna = dna_queen_maria
+			interest_group = ig_intelligentsia # Maria II was a Constitutionalist
+			ideology = ideology_reformer
+			traits = {
+				ambitious brave
+			}
+		}
+	}
+}

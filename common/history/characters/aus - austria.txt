@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:AUS = {
+		create_character = {
+			# Ferdinand I of Austria
+			first_name = Ferdinand
+			last_name = von_Habsburg
+			ruler = yes
+			birth_date = 1625.12.8
+			dna = dna_emperor_ferdinand_01
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				reserved
+			}
+		}
+	}
+}
+

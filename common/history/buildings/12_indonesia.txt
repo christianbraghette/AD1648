@@ -1,0 +1,247 @@
+﻿BUILDINGS={
+	s:STATE_MALAYA={
+		region_state:ACE={
+		}
+	}
+	s:STATE_NORTH_BORNEO={
+		region_state:BRU={
+		}
+	}
+	s:STATE_WEST_BORNEO={
+		region_state:BRU={		
+		}
+	}
+	s:STATE_EAST_BORNEO={
+		region_state:BRU={			
+		}
+	}
+	s:STATE_WEST_JAVA={
+		region_state:DEI={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}
+		}
+		region_state:JAV={
+		}		
+	}
+	s:STATE_EAST_JAVA={
+		region_state:JAV={
+		}
+	}
+	s:STATE_CENTRAL_JAVA={
+		region_state:JAV={
+		}
+		region_state:YOG={						
+		}
+		region_state:SRK={						
+		}
+	}
+	s:STATE_NORTH_SUMATRA={
+		region_state:ACE={
+		}
+	}
+	s:STATE_SOUTH_SUMATRA={
+		region_state:ACE={
+		}
+	}
+	s:STATE_ACEH={
+		region_state:ACE={
+		}
+	}
+	s:STATE_WESTERN_NEW_GUINEA={
+		region_state:TID={
+		}
+	}
+	s:STATE_MOLUCCAS={
+		region_state:DEI={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+			
+		}
+		region_state:TID={
+		}
+	}
+	s:STATE_CELEBES={
+		region_state:SLW={
+		}
+	}
+	s:STATE_EASTERN_NEW_GUINEA={
+		region_state:PPU={
+		}
+	}
+	s:STATE_SUNDA_ISLANDS={
+		region_state:JAV={
+		}
+	}
+	s:STATE_MINDANAO={
+		region_state:PHI={
+		}
+	}
+	s:STATE_LUZON={
+		region_state:MEX={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}		
+		}
+		region_state:BRU={
+		}
+	}
+	s:STATE_VISAYAS={
+		region_state:PHI={
+		}
+	}
+	s:STATE_WEST_MICRONESIA={
+		region_state:MCR={
+		}
+	}
+	s:STATE_EAST_MICRONESIA={
+		region_state:MCR={
+		}
+	}
+	s:STATE_SOLOMON_ISLANDS={
+		region_state:BLA={
+		}
+	}
+	s:STATE_NAURU={
+		region_state:NRU={
+		}
+	}
+	s:STATE_FIJI={
+		region_state:FJI={
+		}
+	}
+	s:STATE_VANUATU={
+		region_state:VNT={
+		}
+	}
+	s:STATE_KANAK={
+		region_state:KNK={
+		}
+	}
+	s:STATE_BOUGAINVILLE={
+		region_state:HLA={
+		}
+	}
+	s:STATE_TAHITI={
+		}
+	}
+	s:STATE_TONGA={
+		region_state:TNG={
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

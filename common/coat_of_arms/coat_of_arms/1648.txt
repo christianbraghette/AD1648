@@ -1,0 +1,271 @@
+﻿MIN = { # 大明
+	# Combination of traditionnal Crow designs
+	
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ming.dds"
+		color1 = "black"
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 } }
+	}
+
+}
+
+DOG = { # 东宁
+	# Combination of traditionnal Crow designs
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "white"
+	}	
+	colored_emblem = {
+		texture = "ce_frame_circle_outline.dds"
+		color1 = "red"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }	
+	}		
+	colored_emblem = {
+		texture = "dong_ning.dds"
+		color1 = "black"
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 } }			
+	}
+
+}
+
+YAR = { # 葉爾羌
+	# Combination of traditionnal Crow designs
+	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "green"
+        instance = { scale = { 1 0.5 } position = { 0.5 0.5 } }		
+	}
+}
+
+DZU = { # 準葛爾
+	# Combination of traditionnal Crow designs
+	
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "white"
+        instance = { scale = { 2 1 } position = { 0.1 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_scimitar_pale.dds"
+		color1 = "red"
+	}	
+}
+
+GLD = { #東非之角 阿珠蘭蘇丹國
+
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "red"
+        instance = { scale = { 2 1 } position = { 0 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_scimitar_pale.dds"
+		color1 = "black"
+		instance = { scale = { 1 0.5 } position = { 0.2 0.5 } }		
+	}		
+}
+
+
+FUN = { #豐吉蘇丹國
+
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_crossed_scimitars_horizontal.dds"
+		color1 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }		
+	}		
+}
+
+MAR = { #東南非洲 馬拉威
+
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "yellow"
+	color3 = "red"
+	
+	colored_emblem = {
+		texture = "pattern_border_outlined_thin.dds"
+		color1 = "blue"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }		
+	}
+	colored_emblem = {
+		texture = "ce_nguni_shield_04.dds"
+		color1 = "black"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }		
+	}		
+}
+
+ZIM = { # 辛巴威 穆塔帕
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "yellow"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 @[1/7*5] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 @[1/7*3] } }
+	}	
+}
+
+GEN = { # 熱納亞
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+BPR = { # 布蘭登堡
+	pattern = "pattern_border_of_2.dds"
+	color1 = "white"
+	color2 = "black"
+
+	textured_emblem= {
+		texture = "te_eagle_prussia_early.dds"
+		color1 = "black"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+ASA = { # 新英格蘭 -> 莫霍克
+	pattern = "pattern_border_of_2.dds"
+	color1 = "blue"
+	color2 = "blue"
+
+	colored_emblem= {
+		texture = "ce_thunderbird.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+
+GWC = { #荷兰西印度公司
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	textured_emblem = {
+		texture = "te_crown_cut.dds"
+		instance = { position = { 0.5 0.25 } scale = { 0.6 0.6 } }
+	}
+	colored_emblem = {
+		texture = "ce_letter_c.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.3 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_letter_m.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_letter_d.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.7 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_letter_i_serif.dds"
+		color1 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}		
+}
+
+BRZ = {
+	pattern = "pattern_per_saltire.dds"
+	color1 = "green"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}
+	textured_emblem = {
+		texture = "te_crown.dds"
+		instance = { scale = { 0.68 0.75 } position = { 0.5 0.28 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portugal.dds"
+		color1 = "yellow_light"
+		instance = { scale = { 1.0 1.0 } position = { 0.5 0.67 } }
+	}	
+}
+
+RAM = { # 东宁
+	# Combination of traditionnal Crow designs
+	
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ram.dds"
+		color1 = "black"
+	}	
+}
+
+PRP = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "black"
+
+	colored_emblem = {
+		texture = "ce_cross_england.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+
+LOU_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_fleur_quebec.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.2 0.6 } scale = { 0.6 0.6 } }
+		instance = { position = { 0.5 0.4 } scale = { 0.6 0.6 } }
+		instance = { position = { 0.8 0.6 } scale = { 0.6 0.6 } }
+	}
+}

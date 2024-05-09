@@ -1,0 +1,64 @@
+﻿je_spain_crisis = { #西班牙危机
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		is_at_war = no
+		NOT = { has_modifier = spain_crisis_effect }		
+		owns_entire_state_region = STATE_CATALONIA
+		OR = {
+			C:POR = { is_subject_of = ROOT }
+			owns_entire_state_region = STATE_ESTREMADURA
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = je_spain_crisiss_ends
+		if = {
+			limit = {
+				exists = c:IBE
+				c:IBE = ROOT
+				C:POR = { is_subject = no }
+			}
+			trigger_event = { id = spain_crisis.1 }
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = { 
+					exists = c:SPA
+					c:SPA = ROOT
+					c:SPA = { NOT = { has_global_variable = ibe_event_start } }
+				}
+				random_list = {
+					1 = { }
+					1 = {
+						c:SPA = {
+							trigger_event = { id = spain_crisis.50 }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = por_has_revolution_text
+			has_global_variable =  ibe_build_fail
+		}
+	}
+
+	on_fail = {
+		custom_tooltip = por_has_revolution_text
+		trigger_event = { id = spain_crisis.61 }
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}

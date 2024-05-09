@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:SAV = {
+		create_character = {
+			# Charles Albert of Sardinia-Piedmont
+			is_general = yes
+			first_name = "Carlo_EmanueleII"
+			last_name = "di_Savoia"
+			ruler = yes
+			birth_date = 1634.6.20
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+			}
+		}
+	}
+}

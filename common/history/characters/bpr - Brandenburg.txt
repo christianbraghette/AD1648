@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:BPR = {
+		create_character = {
+			first_name = "Friedrich_Wilhelm"
+			last_name = "von_Hohenzollern"
+			ruler = yes
+			birth_date = 1620.2.16
+			dna = dna_king_louis_philippe_01
+			interest_group = ig_armed_forces
+			ideology= ideology_royalist
+			traits = {
+				direct innovative ambitious
+			}
+		}
+	}	
+}

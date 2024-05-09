@@ -1,0 +1,176 @@
+﻿TRADE_ROUTES = {
+	c:SWE = {
+		create_trade_route = {
+			goods = fabric
+			level = 4
+			direction = import
+			target = c:PLC.market
+		}
+		create_trade_route = {
+			goods = clothes
+			level = 1
+			direction = import
+			target = c:NET.market
+		}
+	}
+	c:VEN = {
+		create_trade_route = {
+			goods = iron
+			level = 2
+			direction = import
+			target = c:SAV.market
+		}	
+	}
+	c:FRA = {
+		create_trade_route = {
+			goods = furniture
+			level = 2
+			direction = import
+			target = c:SWE.market
+		}
+	}
+	c:ENG = {
+		create_trade_route = {
+			goods = furniture
+			level = 1
+			direction = import
+			target = c:SWE.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 1
+			direction = import
+			target = c:NET.market
+		}
+		create_trade_route = {
+			goods = liquor
+			level = 1
+			direction = import
+			target = c:SPA.market
+		}
+	}
+	c:SPA = {
+		create_trade_route = {
+			goods = furniture
+			level = 2
+			direction = import
+			target = c:SWE.market
+		}
+		create_trade_route = {
+			goods = luxury_furniture
+			level = 3
+			direction = import
+			target = c:SWE.market
+		}
+	}
+	c:AUS = {
+		create_trade_route = {
+			goods = furniture
+			level = 1
+			direction = import
+			target = c:SWE.market
+		}
+		create_trade_route = {
+			goods = luxury_furniture
+			level = 1
+			direction = import
+			target = c:SWE.market
+		}
+		create_trade_route = {
+			goods = fruit
+			level = 2
+			direction = import
+			target = c:TUR.market
+		}
+	}
+	c:DEN = {
+		create_trade_route = {
+			goods = clothes
+			level = 2
+			direction = import
+			target = c:AUS.market
+		}	
+	}
+	c:BPR = {
+		create_trade_route = {
+			goods = meat
+			level = 2
+			direction = import
+			target = c:ENG.market
+		}	
+	}
+	c:POR = {
+		create_trade_route = {
+			goods = silk
+			level = 1
+			direction = import
+			target = c:MIN.market
+		}
+		create_trade_route = {
+			goods = fabric
+			level = 2
+			direction = import
+			target = c:AUS.market
+		}			
+	}
+	c:NET = {
+		create_trade_route = {
+			goods = iron
+			level = 2
+			direction = import
+			target = c:SWE.market
+		}	
+	}	
+	c:DEI = {
+		create_trade_route = {
+			goods = silk
+			level = 2
+			direction = import
+			target = c:MIN.market
+		}
+		create_trade_route = {
+			goods = fabric
+			level = 2
+			direction = import
+			target = c:AUS.market
+		}
+	}
+	c:OMA = {
+		create_trade_route = {
+			goods = wood
+			level = 2
+			direction = import
+			target = c:PER.market
+		}
+		create_trade_route = {
+			goods = coffee
+			level = 2
+			direction = export
+			target = c:TUR.market
+		}	
+	}
+	c:PER = {
+		create_trade_route = {
+			goods = grain
+			level = 2
+			direction = import
+			target = c:PLC.market
+		}
+		create_trade_route = {
+			goods = grain
+			level = 5
+			direction = import
+			target = c:RUS.market
+		}
+	}	
+	c:RUS = {
+		create_trade_route = {
+			goods = grain
+			level = 5
+			direction = import
+			target = c:PLC.market
+		}
+	}
+	####
+
+}

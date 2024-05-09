@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:JAP = {
+
+		create_character = {
+			ruler = yes
+			first_name = Iemitsu
+			last_name = Tokugawa
+			birth_date = 1604.8.12
+			dna = dna_shogun_tokugawa_ienari
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				arrogant
+				expensive_tastes # bit of corruption
+			}
+		}
+	}
+}

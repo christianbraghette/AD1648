@@ -1,0 +1,614 @@
+﻿BUILDINGS={
+	s:STATE_DISTRICT_OF_COLUMBIA={
+
+		region_state:DEL={
+		}
+	}
+	s:STATE_LOUISIANA={
+		region_state:MSC={		
+		}
+	}
+	s:STATE_NEW_YORK={
+		region_state:IRO={
+
+		}
+		region_state:GWC={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}		
+	}
+	s:STATE_VIRGINIA={
+		region_state:MSC={		
+		}
+		region_state:CLI={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ALASKA={
+		region_state:ATB={
+		}
+	}
+	s:STATE_WASHINGTON={
+		region_state:CSC={
+		}
+	}
+	s:STATE_OREGON={
+		region_state:CSC={
+		}
+	}
+	s:STATE_IDAHO={
+		region_state:UTE={
+		}
+		region_state:NZP={
+		}
+	}
+	s:STATE_COLORADO={
+		region_state:ARP={
+			
+		}
+	}
+	s:STATE_WYOMING={
+		region_state:LKT={
+		}
+		region_state:ARP={
+		}
+	}
+	s:STATE_MONTANA={
+		region_state:ABS={
+		}
+		region_state:LKT={
+		}
+	}
+	s:STATE_NORTH_DAKOTA={
+		region_state:LKT={
+		}
+	}
+	s:STATE_SOUTH_DAKOTA={
+		region_state:LKT={
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_NEBRASKA={
+		region_state:CHE={
+		}
+		region_state:LKT={
+		}
+	}
+	s:STATE_KANSAS={
+		region_state:CHE={
+		}
+	}
+	s:STATE_OKLAHOMA={
+		region_state:CHE={
+		}
+		region_state:COM={
+		}
+	}
+	s:STATE_ARKANSAS={
+		region_state:CHE={
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_MISSOURI={
+		region_state:CHE={
+		}
+	}
+	s:STATE_IOWA={
+		region_state:LKT={
+		}	
+	}
+	s:STATE_MINNESOTA={
+		region_state:LKT={
+		}	
+	}
+	s:STATE_WISCONSIN={
+		region_state:CTF={
+		}	
+	}
+	s:STATE_INDIANA={
+		region_state:CTF={
+		}		
+	}
+	s:STATE_MICHIGAN={
+		region_state:CTF={
+		}	
+	}
+	s:STATE_OHIO={
+		region_state:IRO={
+		}		
+	}
+	s:STATE_KENTUCKY={
+		region_state:CHE={
+		}		
+	}
+	s:STATE_TENNESSEE={
+		region_state:CHE={
+		}		
+	}
+	s:STATE_MISSISSIPPI={
+		region_state:MSC={
+		}	
+	}
+	s:STATE_ALABAMA={
+		region_state:MSC={
+		}	
+	}
+	s:STATE_FLORIDA={
+		region_state:MEX={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_GEORGIA={
+		region_state:MSC={			
+		}
+	}
+	s:STATE_WEST_VIRGINIA={
+		region_state:CHE={
+		}
+	}
+	s:STATE_MARYLAND={
+		region_state:DEL={
+		}
+	}
+	s:STATE_DELAWARE={
+		region_state:DEL={
+		}
+	}
+	s:STATE_PENNSYLVANIA={
+		region_state:IRO={	
+		}
+	}
+	s:STATE_NEW_JERSEY={
+		region_state:DEL={
+			create_building={
+			}
+		}
+	}
+	s:STATE_ILLINOIS={
+		region_state:CTF={
+		}
+	}
+	s:STATE_RHODE_ISLAND={
+		region_state:ALG={		
+		}
+	}
+	s:STATE_CONNECTICUT={
+		region_state:ALG={				
+		}
+	}
+	s:STATE_MASSACHUSETTS={
+		region_state:ALG={
+		}
+	}
+	s:STATE_NEW_HAMPSHIRE={
+		region_state:ALG={			
+		}
+		region_state:NEN={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_VERMONT={
+		region_state:ALG={				
+		}
+	}
+	s:STATE_MAINE={
+		region_state:ALG={			
+		}
+	}
+	s:STATE_NORTH_CAROLINA={
+		region_state:MSC={		
+		}
+	}
+	s:STATE_UTAH={
+		region_state:NVJ={
+		}
+		region_state:UTE={
+		}
+	}
+	s:STATE_SOUTH_CAROLINA={
+		region_state:MSC={			
+		}
+	}
+	s:STATE_HAWAIIAN_ISLANDS={
+		region_state:HAW={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+		}
+	}
+	s:STATE_ONTARIO={
+		region_state:IRC={
+		}
+		region_state:CEE={
+		}
+	}
+	s:STATE_NEW_BRUNSWICK={
+		region_state:QUE={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_QUEBEC={
+		region_state:QUE={
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_NEWFOUNDLAND={
+		region_state:CEE={
+		}
+		region_state:ENG={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+			create_building={
+				building="building_whaling_station"
+				level=1
+				reserves=1
+			}
+		}
+		region_state:QUE={
+			create_building={
+				building="building_workshop"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_beer_simple" "pm_1648_wine_simple" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+		}		
+	}
+	s:STATE_ALBERTA={
+		region_state:IRC={
+		}
+	}
+	s:STATE_BRITISH_COLUMBIA={
+		region_state:ATB={
+		}	
+	}
+	s:STATE_SASKATCHEWAN={
+		region_state:IRC={
+		}
+	}
+	s:STATE_MANITOBA={
+		region_state:IRC={
+		}
+	}
+	s:STATE_YUKON_TERRITORY={
+		region_state:ATB={
+		}
+	}
+	s:STATE_NORTHWEST_TERRITORIES={
+		region_state:ATB={
+		}
+	}
+	s:STATE_NUNAVUT={
+		region_state:INI={
+		}
+	}
+	s:STATE_BERMUDA={
+	}
+	s:STATE_TEXAS={
+		region_state:COM={
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+			}
+		}	
+	}
+	s:STATE_NEVADA={
+		region_state:UTE={
+		}
+	}
+	s:STATE_ARIZONA={
+		region_state:CCM={
+		}
+		region_state:NVJ={
+		}
+	}
+	s:STATE_NEW_MEXICO={
+		region_state:PUE={
+		}
+		region_state:NVJ={
+		}
+		region_state:COM={
+		}
+		region_state:APC={
+		}
+	}
+	s:STATE_CALIFORNIA={
+		region_state:HKN={
+		}
+	}
+	s:STATE_SONORA={
+		region_state:CCM={
+		}
+	}
+	s:STATE_CHIHUAHUA={
+		region_state:CCM={
+		}	
+	}
+	s:STATE_RIO_GRANDE={
+		region_state:MEX={
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+		}
+	}
+	s:STATE_DURANGO={
+		region_state:MEX={
+		}
+	}
+	s:STATE_SINALOA={
+		region_state:MEX={
+		}
+	}
+	s:STATE_YUCATAN={
+		region_state:MEX={	
+		}
+	}
+	s:STATE_MEXICO={
+		region_state:MEX={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+			}			
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_VERACRUZ = {
+		region_state:MEX={	
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}		
+		}
+	}
+	s:STATE_GUERRERO={
+		region_state:MEX={
+		}
+	}
+	s:STATE_OAXACA={
+		region_state:MEX={
+		}
+	}
+	s:STATE_JALISCO={
+		region_state:MEX={
+		}
+	}
+	s:STATE_ZACATECAS={
+		region_state:MEX={
+		}
+	}
+	s:STATE_BAJIO={
+		region_state:MEX={
+			create_building={
+				building="building_gold_mine"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_CHIAPAS={
+		region_state:MEX={
+		}
+	}
+	s:STATE_BAJA_CALIFORNIA={
+		region_state:CCM={	
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

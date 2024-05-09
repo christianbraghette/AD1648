@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:DEN = {
+		create_character = {
+			# Frederick VI of Denmark
+			first_name = "Christian_IV"
+			last_name = "von_Oldenburg"
+			ruler = yes
+			birth_date = 1577.4.12
+			dna = dna_king_frederick_06
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				reserved
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+    }		
+}

@@ -1,0 +1,501 @@
+﻿BUILDINGS={
+	s:STATE_DAGESTAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_KUBAN={
+		region_state:CIR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ARMENIA={
+		region_state:TUR={
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_AZERBAIJAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_no_specialists"}
+			}	
+		}
+	}
+	s:STATE_GREATER_CAUCASUS={
+		region_state:TUR={
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_SAMARA={ #ok
+		region_state:RUS={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_KAZAN={ ##OK
+		region_state:RUS={ 
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+		}
+	}
+	s:STATE_TARTARIA={  ##OK
+		region_state:RUS={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}		
+			create_building={
+				building="building_iron_mine"
+				level=3
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_ASTRAKHAN={ ##OK
+		region_state:RUS={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_URALSK={
+		region_state:KAZ={
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+		}
+	}
+	s:STATE_KHIVA={
+		region_state:KHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_UZBEKIA={
+		region_state:BUK={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_TAJIKISTAN={
+		region_state:YAR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_coal_mine"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_KIRGHIZIA={
+		region_state:YAR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}		
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+		}
+	}
+	s:STATE_TURKMENIA={
+		region_state:KHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+		}
+	}
+	s:STATE_SEMIRECHE={
+		region_state:KAZ={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+		}
+	}
+	s:STATE_AKMOLINSK={
+		region_state:KAZ={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_PASHTUNISTAN={
+		region_state:MUG={
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+		}
+	}
+	s:STATE_WESTERN_AFGHANISTAN={
+		region_state:MUG={
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=3
+				reserves=1
+			}
+		}
+	}
+	s:STATE_EASTERN_AFGHANISTAN={
+		region_state:MUG={
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=3
+				reserves=1
+			}
+		}
+	}
+	s:STATE_BALUCHISTAN={
+		region_state:MUG={
+			create_building={
+				building="building_iron_mine"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_LHASA={
+		region_state:TIB={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}	
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_NGARI={
+		region_state:TIB={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+		}
+	}
+	s:STATE_HIMALAYAS={
+		region_state:SIK={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+		}
+		region_state:BHU={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+		}
+		region_state:NEP={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_JETISY={
+		region_state:KAZ={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_simple" }
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,647 @@
+﻿namespace = spain_crisis
+
+####事件串开始###
+##询问是否重建
+spain_crisis.50 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.50.t
+	desc = spain_crisis.50.d
+	flavor = spain_crisis.50.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		set_global_variable = ibe_event_start
+		
+	}
+
+	option = {
+		name = spain_crisis.50.a
+		remove_modifier = spain_crisis_effect
+		add_modifier = { name = rebuild_eba_effect months = 240 }
+		hidden_effect = {
+			c:SPA = {
+				trigger_event = {
+					id = spain_crisis.57
+					days = 1800
+				}
+			}
+		}
+		ai_chance = {
+			base = 9
+		}	
+	}
+	option = {
+		name = spain_crisis.50.b
+		remove_modifier = spain_crisis_effect
+		set_global_variable = ibe_build_fail
+		ai_chance = {
+			base = 1
+		}		
+	}
+}
+
+##提议换地
+spain_crisis.51 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.51.t
+	desc = spain_crisis.51.d
+	flavor = spain_crisis.51.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {		
+		
+	}
+
+	option = {
+		name = spain_crisis.51.a
+		c:FRA = {
+			trigger_event = {
+				id = spain_crisis.52
+				days = 0
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = spain_crisis.51.b
+		ai_chance = {
+			base = 1
+		}	
+	}
+}
+
+##法国决定接受与否
+spain_crisis.52 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.52.t
+	desc = spain_crisis.52.d
+	flavor = spain_crisis.52.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {		
+		
+	}
+
+	option = {	
+		name = spain_crisis.52.a
+		if = {
+			limit = { exists = s:STATE_LANGUEDOC.region_state:CAT }
+			s:STATE_LANGUEDOC.region_state:CAT = { set_state_owner = c:FRA }
+		}
+		c:FRA = {
+			create_truce = {
+				country = c:SPA
+				months = 60
+			}
+		}
+		c:CAT = {
+			trigger_event = {
+				id = spain_crisis.55
+				days = 1
+			}
+		}
+		c:SPA = {
+			trigger_event = {
+				id = spain_crisis.54
+				days = 10
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = spain_crisis.52.b
+		ai_chance = {
+			base = 1
+		}
+		c:SPA = {
+			trigger_event = {
+				id = spain_crisis.53
+				days = 10
+			}
+		}
+	}
+}
+
+##法国拒绝
+spain_crisis.53 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.53.t
+	desc = spain_crisis.53.d
+	flavor = spain_crisis.53.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {		
+		
+	}
+	option = {	
+		name = spain_crisis.53.a
+	}
+}
+
+##法国同意 西班牙开战
+spain_crisis.54 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.54.t
+	desc = spain_crisis.54.d
+	flavor = spain_crisis.54.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_american_civil_war.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/american_civil_war"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		
+	}
+	option = {
+		name = spain_crisis.54.a
+		c:SPA = {
+			create_diplomatic_play = {
+				name = cat_ind_war					
+				war = yes			
+				type = dp_annex_war
+				target_state = s:STATE_CATALONIA.region_state:CAT			
+			}			
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = spain_crisis.54.b
+		ai_chance = {
+			base = 1
+		}
+	}	
+}
+
+###西班牙得知法国拒绝
+spain_crisis.55 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.55.t
+	desc = spain_crisis.55.d
+	flavor = spain_crisis.55.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_american_civil_war.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/american_civil_war"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		
+	}
+	option = {
+		name = spain_crisis.55.a
+	}
+}
+
+
+##CAT知道自己要被打
+spain_crisis.56 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.56.t
+	desc = spain_crisis.56.d
+	flavor = spain_crisis.56.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_american_civil_war.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/american_civil_war"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		
+	}
+	option = {
+		name = spain_crisis.56.a
+	}
+}
+
+###判断CAT存在否，是才进行下一步
+spain_crisis.57 = {
+	type = country_event
+	placement = ROOT
+	hidden = yes
+
+	title = spain_crisis.57.t
+	desc = spain_crisis.57.d
+	flavor = spain_crisis.57.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		if = {
+			limit = {
+				exists = c:CAT
+				is_at_war = no
+			}
+			c:SPA = {
+				trigger_event = {
+					id = spain_crisis.51
+					days = 1
+				}
+			}			
+		}
+		else if = {
+			limit = {
+				exists = c:CAT
+				is_at_war = yes
+			}
+			c:SPA = {
+				trigger_event = {
+					id = spain_crisis.57
+					days = 180
+				}
+			}
+		}
+		else = {
+		}
+	}
+}
+
+##判断有无成功
+spain_crisis.60 = {
+	type = country_event
+	placement = ROOT
+	hidden = yes
+
+	title = spain_crisis.60.t
+	desc = spain_crisis.60.d
+	flavor = spain_crisis.60.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_american_civil_war.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/american_civil_war"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					C:POR = { is_subject_of = ROOT }
+					owns_entire_state_region = STATE_ESTREMADURA
+				}
+				owns_entire_state_region = STATE_CATALONIA
+			}
+		}
+		else = {
+			set_global_variable = ibe_build_fail
+		}
+	}
+}
+###告知失败
+spain_crisis.61 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.61.t
+	desc = spain_crisis.61.d
+	flavor = spain_crisis.61.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_devastation.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/american_civil_war"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+
+	}
+
+	immediate = {
+	}
+	option = {
+		name = spain_crisis.61.a
+	}	
+	
+}
+
+
+##以下作废##
+
+##通知法国###
+spain_crisis.96 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.96.t
+	desc = spain_crisis.96.d
+	flavor = spain_crisis.96.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = spain_crisis.96.a
+	}
+}
+
+
+
+
+spain_crisis.97 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.97.t
+	desc = spain_crisis.97.d
+	flavor = spain_crisis.97.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = spain_crisis.97.a
+		default_option = yes
+		remove_modifier = spain_crisis_effect 
+	}
+}
+
+
+
+
+spain_crisis.98 = {
+	type = country_event
+	placement = ROOT
+
+	title = spain_crisis.98.t
+	desc = spain_crisis.98.d
+	flavor = spain_crisis.98.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = spain_crisis.98.a
+		default_option = yes
+		ai_chance = {
+			base = 30
+		}
+	}
+	option = {
+		name = spain_crisis.98.b
+		trigger_event = { id = spain_crisis.97 }
+		remove_modifier = por_rev_pre_1_effect
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:POR
+				type = personal_union
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+
+spain_crisis.99 = {
+	type = country_event
+	hidden = yes
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { 
+				NOT = {
+					has_global_variable = por_rev_value					
+				}
+			}
+			c:POR = { 
+				add_modifier = {
+					name = por_rev_pre_1_effect
+				}
+				trigger_event = { id = spain_crisis.98 }
+				set_global_variable = {
+					name = por_rev_value
+					value = 1
+				}
+			}
+		}	
+		else_if = {
+			limit = { 
+				global_var:por_rev_value = 1
+			}
+			c:POR = { 
+				remove_modifier = por_rev_pre_1_effect
+				add_modifier = { name = por_rev_pre_2_effect }
+				set_global_variable = {
+					name = por_rev_value
+					value = 2
+				}
+			}
+			C:SPA = { trigger_event = { id = spain_crisis.2 } }
+		}
+		else_if = {
+			limit = { 
+				has_global_variable = por_rev_value
+				global_var:por_rev_value = 2
+			}
+			c:POR = { 
+				remove_modifier = por_rev_pre_2_effect
+				add_modifier = { name = por_rev_pre_3_effect }
+				set_global_variable = {
+					name = por_rev_value
+					value = 3
+				}
+			}
+			C:SPA = { trigger_event = { id = spain_crisis.2 } }
+		}
+		else_if = {
+			limit = { 
+				has_global_variable = por_rev_value
+				global_var:por_rev_value = 3
+			}
+			c:POR = { 
+				remove_modifier = por_rev_pre_3_effect
+				add_modifier = { name = por_rev_pre_4_effect }
+				set_global_variable = {
+					name = por_rev_value
+					value = 4
+				}
+			}
+			C:SPA = { trigger_event = { id = spain_crisis.2 } }
+			#C:FRA = { trigger_event = { id = spain_crisis.96 } }
+		}
+		else_if = {
+			limit = {
+				has_global_variable = por_rev_value
+				global_var:por_rev_value = 4
+			}
+			c:POR = { 
+				remove_modifier =  por_rev_pre_4_effect	
+				add_modifier = { 
+					name = por_rev_pre_5_effect 
+					months = 48 
+				}
+				set_global_variable = {
+					name = por_rev_value
+					value = 5
+				}
+			}
+			C:POR = { trigger_event = { id = spain_crisis.3 } }
+		}
+	}
+}

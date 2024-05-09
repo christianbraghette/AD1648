@@ -1,0 +1,391 @@
+﻿
+# 西欧强国使用
+effect_starting_technology_tier_1_tech = {
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+	add_technology_researched = base_weapon
+	add_technology_researched = base_workshop
+	add_technology_researched = reg_celebrate
+	add_technology_researched = workshop_tool
+	add_technology_researched = 1648_handle_house
+	add_technology_researched = 1648_handle_fur
+	add_technology_researched = base_school_1
+	add_technology_researched = farm_upgrade
+	add_technology_researched = wine_farm
+	add_technology_researched = base_appro
+	add_technology_researched = base_hard_wood
+	add_technology_researched = 1648_cloth_high
+	add_technology_researched = 1648_hight_fur
+	add_technology_researched = base_no_farm_slave
+	add_technology_researched = market_center
+	add_technology_researched = workshop_glass
+	add_technology_researched = tech_health_1
+	##
+	add_technology_researched = early_tradition_army	
+	add_technology_researched = standing_army
+	add_technology_researched = tech_stone_cannon
+	add_technology_researched = square_tactics
+	add_technology_researched = tech_early_cannon
+	add_technology_researched = tech_fire_gun
+	add_technology_researched = union_operation
+	add_technology_researched = base_shipyard
+	add_technology_researched = base_port
+	add_technology_researched = base_fishpoint
+	add_technology_researched = base_navy
+	add_technology_researched = near_fish
+	add_technology_researched = whale_fish
+	add_technology_researched = hard_ship
+	add_technology_researched = speed_ship
+	add_technology_researched = navy_team
+	add_technology_researched = port_expansion_1
+	add_technology_researched = navy_team
+	add_technology_researched = ship_line
+	add_technology_researched = barracks_build_1
+	add_technology_researched = barracks_build_2	
+	add_technology_researched = scout_human
+	add_technology_researched = tech_cavalary_charge
+	##
+	add_technology_researched = renaissance
+	add_technology_researched = base_gov
+	add_technology_researched = base_infrastructure
+	add_technology_researched = tech_code
+	add_technology_researched = road_build
+	add_technology_researched = land_tax
+	add_technology_researched = clerks_system
+	add_technology_researched = humanism
+	add_technology_researched = public_horse
+	add_technology_researched = gov_adv
+	add_technology_researched = base_health
+	add_technology_researched = city_plan
+	add_technology_researched = astronomy
+	add_technology_researched = explore
+	add_technology_researched = reg_reform
+	add_technology_researched = despotism
+	add_technology_researched = movable_type
+	add_technology_researched = migration_controls	
+	add_technology_researched = mercantilism
+	add_technology_researched = bill_of_rights 
+	add_technology_researched = school_base
+	add_technology_researched = big_construction
+	add_technology_researched = write_officer
+	add_technology_researched = enlightenment
+	add_technology_researched = trade_pact
+}
+
+# 欧洲中等国使用
+
+effect_starting_technology_tier_2_tech = {
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+	add_technology_researched = base_weapon
+	add_technology_researched = base_workshop
+	add_technology_researched = reg_celebrate
+	add_technology_researched = workshop_tool
+	add_technology_researched = 1648_handle_house
+	add_technology_researched = 1648_handle_fur
+	add_technology_researched = base_school_1
+	add_technology_researched = farm_upgrade
+	add_technology_researched = wine_farm
+	add_technology_researched = base_appro
+	add_technology_researched = base_hard_wood
+	add_technology_researched = 1648_cloth_high
+	add_technology_researched = 1648_hight_fur
+	add_technology_researched = market_center
+	add_technology_researched = workshop_glass
+	##
+	add_technology_researched = early_tradition_army	
+	add_technology_researched = standing_army
+	add_technology_researched = tech_stone_cannon
+	add_technology_researched = square_tactics
+	add_technology_researched = tech_early_cannon
+	add_technology_researched = tech_fire_gun
+	add_technology_researched = union_operation
+	add_technology_researched = base_shipyard
+	add_technology_researched = base_port
+	add_technology_researched = base_fishpoint
+	add_technology_researched = base_navy
+	add_technology_researched = near_fish
+	add_technology_researched = whale_fish
+	add_technology_researched = hard_ship
+	add_technology_researched = speed_ship
+	add_technology_researched = navy_team
+	add_technology_researched = port_expansion_1
+	add_technology_researched = navy_team
+	add_technology_researched = ship_line
+	add_technology_researched = barracks_build_1
+	add_technology_researched = barracks_build_2	
+	add_technology_researched = scout_human
+	add_technology_researched = tech_cavalary_charge
+	##
+	add_technology_researched = renaissance
+	add_technology_researched = base_gov
+	add_technology_researched = base_infrastructure
+	add_technology_researched = tech_code
+	add_technology_researched = road_build
+	add_technology_researched = land_tax
+	add_technology_researched = clerks_system
+	add_technology_researched = humanism
+	add_technology_researched = public_horse
+	add_technology_researched = gov_adv
+	add_technology_researched = base_health
+	add_technology_researched = city_plan
+	add_technology_researched = astronomy
+	add_technology_researched = explore
+	add_technology_researched = reg_reform
+	add_technology_researched = despotism
+	add_technology_researched = movable_type
+	add_technology_researched = migration_controls	
+	add_technology_researched = mercantilism
+	add_technology_researched = bill_of_rights 
+}
+
+# 大明使用
+
+effect_starting_technology_tier_3_tech = {
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+	add_technology_researched = base_weapon
+	add_technology_researched = base_workshop
+	add_technology_researched = reg_celebrate
+	add_technology_researched = workshop_tool
+	add_technology_researched = 1648_handle_house
+	add_technology_researched = 1648_handle_fur
+	add_technology_researched = base_school_1
+	add_technology_researched = farm_upgrade
+	add_technology_researched = base_appro
+	add_technology_researched = base_hard_wood
+	add_technology_researched = 1648_hight_fur
+	add_technology_researched = market_center
+	add_technology_researched = workshop_glass
+	add_technology_researched = tech_health_1
+	add_technology_researched = wine_farm	
+	add_technology_researched = 1648_cloth_high	
+	add_technology_researched = tech_base_plant
+	##
+	add_technology_researched = early_tradition_army	
+	add_technology_researched = standing_army
+	add_technology_researched = tech_stone_cannon
+	add_technology_researched = square_tactics
+	add_technology_researched = tech_early_cannon
+	add_technology_researched = tech_fire_gun
+	add_technology_researched = union_operation
+	add_technology_researched = base_shipyard
+	add_technology_researched = base_port
+	add_technology_researched = base_fishpoint
+	add_technology_researched = base_navy
+	add_technology_researched = near_fish
+	add_technology_researched = whale_fish
+	add_technology_researched = hard_ship
+	add_technology_researched = speed_ship
+	add_technology_researched = barracks_build_1
+	add_technology_researched = barracks_build_2
+	##
+	add_technology_researched = renaissance
+	add_technology_researched = base_gov
+	add_technology_researched = base_infrastructure
+	add_technology_researched = tech_code
+	add_technology_researched = road_build
+	add_technology_researched = land_tax
+	add_technology_researched = clerks_system
+	add_technology_researched = humanism
+	add_technology_researched = public_horse
+	add_technology_researched = gov_adv
+	add_technology_researched = base_health
+	add_technology_researched = city_plan
+	add_technology_researched = astronomy
+	add_technology_researched = explore
+	add_technology_researched = reg_reform
+	add_technology_researched = despotism
+}
+
+# 东亚国家 日韩
+
+effect_starting_technology_tier_4_tech = {
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+	add_technology_researched = base_weapon
+	add_technology_researched = base_workshop
+	add_technology_researched = reg_celebrate
+	add_technology_researched = workshop_tool
+	add_technology_researched = 1648_handle_house
+	add_technology_researched = 1648_handle_fur
+	add_technology_researched = base_school_1
+	add_technology_researched = farm_upgrade
+	add_technology_researched = wine_farm
+	add_technology_researched = base_appro
+	add_technology_researched = base_hard_wood
+	add_technology_researched = 1648_cloth_high
+	##
+	add_technology_researched = early_tradition_army	
+	add_technology_researched = standing_army
+	add_technology_researched = tech_stone_cannon
+	add_technology_researched = square_tactics
+	add_technology_researched = tech_early_cannon
+	add_technology_researched = tech_fire_gun
+	add_technology_researched = union_operation
+	add_technology_researched = base_shipyard
+	add_technology_researched = base_port
+	add_technology_researched = base_fishpoint
+	add_technology_researched = base_navy
+	add_technology_researched = near_fish
+	add_technology_researched = whale_fish
+	add_technology_researched = hard_ship
+	add_technology_researched = speed_ship
+	##
+	add_technology_researched = renaissance
+	add_technology_researched = base_gov
+	add_technology_researched = base_infrastructure
+	add_technology_researched = base_health	
+	add_technology_researched = tech_code	
+	add_technology_researched = road_build
+	add_technology_researched = land_tax
+	add_technology_researched = clerks_system
+	add_technology_researched = humanism
+	add_technology_researched = public_horse
+	add_technology_researched = city_plan
+	add_technology_researched = astronomy
+
+}
+
+# 中亚国家
+effect_starting_technology_tier_5_tech = {	
+	add_technology_researched = early_tradition_army
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+	add_technology_researched = base_weapon
+	add_technology_researched = base_workshop
+	add_technology_researched = reg_celebrate
+	add_technology_researched = workshop_tool
+	add_technology_researched = 1648_handle_house
+	add_technology_researched = 1648_handle_fur
+	add_technology_researched = base_school_1
+	add_technology_researched = farm_upgrade
+	add_technology_researched = base_hard_wood
+	##
+	add_technology_researched = early_tradition_army	
+	add_technology_researched = standing_army
+	add_technology_researched = tech_stone_cannon
+	add_technology_researched = square_tactics
+	add_technology_researched = base_shipyard
+	add_technology_researched = tech_early_cannon
+	add_technology_researched = tech_fire_gun
+	add_technology_researched = union_operation
+	add_technology_researched = base_port
+	add_technology_researched = base_fishpoint
+	add_technology_researched = base_navy
+	add_technology_researched = near_fish
+	##
+	add_technology_researched = renaissance
+	add_technology_researched = base_gov
+	add_technology_researched = base_health	
+	add_technology_researched = base_infrastructure
+	add_technology_researched = tech_code	
+	add_technology_researched = road_build
+	add_technology_researched = land_tax
+	add_technology_researched = clerks_system
+	add_technology_researched = humanism
+	add_technology_researched = public_horse
+
+}
+
+# 南亚印度诸国 北非国家 泼斯
+effect_starting_technology_tier_6_tech = {	
+	add_technology_researched = early_tradition_army
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+	add_technology_researched = base_weapon
+	add_technology_researched = base_workshop
+	add_technology_researched = reg_celebrate
+	add_technology_researched = workshop_tool
+	add_technology_researched = 1648_handle_house
+	add_technology_researched = 1648_handle_fur
+	add_technology_researched = base_school_1
+	add_technology_researched = base_hard_wood
+	##
+	add_technology_researched = standing_army
+	add_technology_researched = tech_stone_cannon
+	add_technology_researched = square_tactics
+	add_technology_researched = tech_early_cannon
+	add_technology_researched = tech_fire_gun
+	add_technology_researched = base_shipyard
+	add_technology_researched = base_port
+	add_technology_researched = base_fishpoint
+	add_technology_researched = base_navy
+	add_technology_researched = near_fish
+	##
+	add_technology_researched = renaissance
+	add_technology_researched = base_gov
+	add_technology_researched = base_infrastructure
+	add_technology_researched = tech_code
+	add_technology_researched = road_build
+	add_technology_researched = land_tax
+	add_technology_researched = humanism
+}
+
+
+
+# 非洲国家
+effect_starting_technology_tier_7_tech = {
+	add_technology_researched = early_tradition_army
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+	add_technology_researched = base_weapon
+	add_technology_researched = base_workshop
+	add_technology_researched = reg_celebrate
+	add_technology_researched = workshop_tool
+	add_technology_researched = 1648_handle_house
+	##
+	add_technology_researched = standing_army
+	add_technology_researched = tech_stone_cannon
+	add_technology_researched = square_tactics
+	add_technology_researched = base_shipyard
+	add_technology_researched = base_port
+	add_technology_researched = base_fishpoint
+	add_technology_researched = base_navy
+	##
+	add_technology_researched = renaissance
+	add_technology_researched = base_gov
+}
+
+#美洲未开化国家
+effect_starting_technology_tier_8_tech = {
+	add_technology_researched = early_tradition_army
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+	add_technology_researched = base_weapon
+	add_technology_researched = base_workshop
+	add_technology_researched = reg_celebrate
+	add_technology_researched = workshop_tool
+	##
+	add_technology_researched = standing_army
+	add_technology_researched = tech_stone_cannon
+	add_technology_researched = base_shipyard
+	add_technology_researched = base_fishpoint
+	##
+}
+
+#土著国
+effect_starting_technology_tier_9_tech =  {
+	add_technology_researched = early_tradition_army
+	add_technology_researched = base_land
+	add_technology_researched = base_royal_iron
+	add_technology_researched = base_resource
+	add_technology_researched = base_mine
+
+}

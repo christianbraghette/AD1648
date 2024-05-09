@@ -1,0 +1,531 @@
+namespace = qing_lord
+
+qing_lord.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.1.t
+	desc = qing_lord.1.d
+	flavor = qing_lord.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:CHI
+		this = c:CHI
+		NOT = { exists = c:MIN }
+		NOT = { has_global_variable = qing_lord }	
+	}
+
+	immediate = {
+		set_global_variable = qing_lord
+	}
+
+	option = {
+		name = qing_lord.1.a
+		add_primary_culture = cu:han				
+		if = {
+			limit = { exists = s:STATE_YUNNAN.region_state:CHI }
+			create_country = { 
+				tag = YUN
+				origin = this
+				state = s:STATE_YUNNAN.region_state:CHI
+			}
+			if = {
+				limit = { exists = s:STATE_GUIZHOU.region_state:CHI }
+				s:STATE_GUIZHOU.region_state:CHI = { set_state_owner = c:YUN }
+			}
+			create_diplomatic_pact = {
+				country = c:YUN
+				type = puppet
+			}			
+		}	
+		if = {
+			limit = { exists = s:STATE_GUANGDONG.region_state:CHI }
+			create_country = { 
+				tag = GNG
+				origin = this
+				state = s:STATE_GUANGDONG.region_state:CHI
+			}
+			if = {
+				limit = { exists = s:STATE_GUANGXI.region_state:CHI }
+				s:STATE_GUANGXI.region_state:CHI = { set_state_owner = c:GNG }
+			}
+			create_diplomatic_pact = {
+				country = c:GNG
+				type = puppet
+			}				
+		}
+		if = {
+			limit = { exists = s:STATE_SHAOZHOU.region_state:CHI }
+			create_country = { 
+				tag = FJA
+				origin = this
+				state = s:STATE_SHAOZHOU.region_state:CHI
+			}
+			if = {
+				limit = { exists = s:STATE_FUJIAN.region_state:CHI }
+				s:STATE_FUJIAN.region_state:CHI = { set_state_owner = c:FJA }
+			}
+			if = {
+				limit = { exists = s:STATE_JIANGXI.region_state:CHI }
+				s:STATE_JIANGXI.region_state:CHI = { set_state_owner = c:FJA }
+			}
+			create_diplomatic_pact = {
+				country = c:FJA
+				type = puppet
+			}				
+		}
+		hidden_effect = {
+			if = {
+				limit = { exists = s:STATE_FORMOSA.region_state:DEI }
+				create_country = { 
+					tag = DOG
+					origin = this
+					state = s:STATE_FORMOSA.region_state:DEI
+				}
+			}	
+			c:DEI = {
+				trigger_event = { id = qing_lord.2 }
+			}			
+		}		
+	}	
+	option = {
+		name = qing_lord.1.b
+		ai_chance = {
+			base = 1
+		}
+		hidden_effect = {
+			if = {
+				limit = { exists = s:STATE_FORMOSA.region_state:DEI }
+				create_country = { 
+					tag = DOG
+					origin = this
+					state = s:STATE_FORMOSA.region_state:DEI
+				}			
+			}			
+			c:DEI = {
+				trigger_event = { id = qing_lord.2 }
+			}			
+		}		
+	}	
+}
+
+qing_lord.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.2.t
+	desc = qing_lord.2.d
+	flavor = qing_lord.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+
+		c:DOG = {
+			create_character = {
+				first_name = "zheng"
+				last_name = "chengkong"
+				ruler = yes
+				noble = yes
+				birth_date = 1624.8.27
+				interest_group = ig_landowners
+				ideology = ideology_royalist
+				traits = {
+					brave innovative
+				}
+			}
+			add_technology_researched = sericulture
+			add_technology_researched = 1648_han_exam
+			add_technology_researched = china_tea
+			activate_law = law_type:law_professional_army
+			activate_law = law_type:law_appointed_bureaucrats
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_national_supremacy
+			activate_law = law_type:law_frontier_colonization
+			activate_law = law_type:law_autocracy
+			activate_law = law_type:law_traditionalism
+			activate_law = law_type:law_no_schools
+			activate_law = law_type:law_censorship
+			activate_law = law_type:law_monarchy
+			activate_law = law_type:law_no_health_system
+			activate_law = law_type:law_no_home_affairs
+			activate_law = law_type:law_serfdom_free
+			activate_law = law_type:law_closed_borders
+			activate_law = law_type:law_no_police
+			activate_law = law_type:law_no_womens_rights
+			activate_law = law_type:law_debt_slavery
+			activate_law = law_type:law_land_based_taxation
+			activate_law = law_type:law_mercantilism			
+		}		
+	}
+
+	option = {
+		name = qing_lord.2.a
+		ai_chance = {
+			base = 1
+		}
+		c:DEI = {
+			create_diplomatic_play = {
+				name = formosa_war
+				war = yes
+				type = dp_conquer_state
+				target_state = s:STATE_FORMOSA.region_state:DOG
+			}
+		}		
+	}	
+	option = {
+		name = qing_lord.2.b
+		ai_chance = {
+			base = 5
+		}
+		
+		
+	}	
+}
+
+qing_lord.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.3.t
+	desc = qing_lord.3.d
+	flavor = qing_lord.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:CHI
+		this = c:CHI
+		NOT = { has_global_variable = qing_invade_china } 
+	}
+
+	immediate = {
+		set_global_variable = qing_invade_china	
+	}
+
+	option = {
+		name = qing_lord.3.a
+		ai_chance = {
+			base = 10
+		}
+		change_infamy = -150
+		add_modifier = { name = han_army_effect months = 60 }
+		hidden_effect = {
+			c:MIN = {
+				trigger_event = { id = qing_lord.4 days = 10 }
+			}
+		}
+	}
+	option = {
+		name = qing_lord.3.b
+		ai_chance = {
+			base = 1
+		}
+		change_infamy = -150
+		add_modifier = { name = man_army_effect months = 60 }
+
+		hidden_effect = {
+			c:MIN = {
+				trigger_event = { id = qing_lord.4 days = 10 }
+			}
+		}
+	}
+}
+
+##詢問換地拿資源嗎
+qing_lord.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.4.t
+	desc = qing_lord.4.d
+	flavor = qing_lord.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = qing_lord.4.a
+		ai_chance = {
+			base = 1
+		}
+		c:POR = {
+			trigger_event = { id = qing_lord.5 }
+		}
+		c:NET = {
+			trigger_event = { id = qing_lord.8 }
+		}
+	}
+	option = {
+		name = qing_lord.4.b
+		ai_chance = {
+			base = 7
+		}
+	}
+}
+
+
+###葡萄牙的選擇###
+qing_lord.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.5.t
+	desc = qing_lord.5.d
+	flavor = qing_lord.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = qing_lord.5.a
+		ai_chance = {
+			base = 1
+		}
+		add_modifier = { name = help_china_income_effect months = 36 }
+		c:MIN = {
+			trigger_event = { id = qing_lord.6 days = 30 }
+		}
+	}
+	option = {
+		name = qing_lord.5.b
+		ai_chance = {
+			base = 1
+		}
+		c:MIN = {
+			trigger_event = { id = qing_lord.7 days = 30 }
+		}
+	}
+}
+
+
+###葡萄牙Ok
+qing_lord.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.6.t
+	desc = qing_lord.6.d
+	flavor = qing_lord.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = qing_lord.6.a
+		ai_chance = {
+			base = 1
+		}
+		add_modifier = { name = por_gun_effect months = 60 }
+		s:STATE_GUANGDONG.region_state:MIN = { set_state_owner = c:POR }
+	}
+}
+
+###葡萄牙no
+qing_lord.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.7.t
+	desc = qing_lord.7.d
+	flavor = qing_lord.7.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = qing_lord.7.a
+	}
+}
+
+###荷蘭的選擇###
+qing_lord.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.8.t
+	desc = qing_lord.8.d
+	flavor = qing_lord.8.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = qing_lord.8.a
+		ai_chance = {
+			base = 1
+		}
+		add_modifier = { name = help_china_income_effect months = 36 }
+		c:MIN = {
+			trigger_event = { id = qing_lord.9 days = 10 }
+		}
+	}
+	option = {
+		name = qing_lord.8.b
+		ai_chance = {
+			base = 1
+		}
+		c:MIN = {
+			trigger_event = { id = qing_lord.10 days = 10 }
+		}
+	}
+}
+
+###荷蘭Ok
+qing_lord.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.9.t
+	desc = qing_lord.9.d
+	flavor = qing_lord.9.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = qing_lord.9.a
+		ai_chance = {
+			base = 1
+		}
+		add_modifier = { name = net_gun_effect months = 60 }
+		s:STATE_SHAOZHOU.region_state:MIN = { set_state_owner = c:DEI }
+	}
+}
+
+##荷蘭no
+qing_lord.10 = {
+	type = country_event
+	placement = ROOT
+
+	title = qing_lord.10.t
+	desc = qing_lord.10.d
+	flavor = qing_lord.10.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = qing_lord.10.a
+	}
+}

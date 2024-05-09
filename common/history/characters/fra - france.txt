@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:FRA = {
+		create_character = {
+			first_name = "Louis_XIV"
+			last_name = "de_Bourbon"
+			ruler = yes
+			birth_date = 1634.5.14
+			dna = dna_king_louis_philippe_01
+			interest_group = ig_industrialists
+			ideology = ideology_royalist
+			traits = {
+				direct innovative ambitious
+			}
+		}
+	}
+}

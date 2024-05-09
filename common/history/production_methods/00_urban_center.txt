@@ -1,0 +1,38 @@
+﻿PRODUCTION_METHODS = {	
+	c:FRA = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_market_squares
+		}
+	}	
+	c:BPR = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_market_squares
+		}
+	}
+	c:AUS = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_market_squares
+		}
+	}
+	c:ENG = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_market_squares
+		}
+	}
+	c:VEN = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_market_squares
+		}
+	}
+	c:NET = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_market_squares
+		}
+	}
+}

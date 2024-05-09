@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:KON = {
+		create_character = {
+			# André II Kinlaza
+			first_name = "Andre"
+			last_name = "Kinlaza"
+			ruler = yes
+			birth_date = 1598.6.12 # Only year known
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+		}
+	}
+}

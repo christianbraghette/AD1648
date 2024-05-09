@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:RUS = {
+		create_character = {
+			# Tsar Nicholas I of Russia
+			first_name = Alexis
+			last_name = Mikhaylovich
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			ruler = yes
+			birth_date = 1629.2.8
+			dna = dna_tsar_nicolas_01
+			traits = {
+				persistent
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}		
+	}
+}

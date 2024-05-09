@@ -1,0 +1,20 @@
+﻿# NOTE: "Pasha" is a title, not a name. However, due to some Ottoman Turkish names lacking a last name, it is used in place of one
+
+CHARACTERS = {
+	c:TUR = {
+		create_character = {
+			# Mahmud II of the Ottoman Empire
+			#role = politician # Remove this line
+			first_name = Ibrahim
+			last_name = Osmanoglu
+			ruler = yes
+			birth_date = 1615.11.5
+			dna = dna_mahmud_02
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+				bigoted
+			}
+		}
+	}
+}

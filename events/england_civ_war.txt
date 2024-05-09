@@ -1,0 +1,150 @@
+﻿namespace = england_civ_war
+
+# Start event for obsessed country
+england_civ_war.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = england_civ_war.1.t
+	desc = england_civ_war.1.d
+	flavor = victoria.1.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = england_civ_war.1.a
+		default_option = yes		
+	}
+}
+
+england_civ_war.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = england_civ_war.2.t
+	desc = england_civ_war.2.d
+	flavor = england_civ_war.2.f
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_HOME_COUNTIES.region_state:ENG }
+			create_country = { 
+				tag = EGA
+				origin = this
+				state = s:STATE_HOME_COUNTIES.region_state:ENG
+			}
+			c:EGA = { save_scope_as = scope_EGA }
+			if = {
+				limit = { exists = s:STATE_LANCASHIRE.region_state:ENG }
+				s:STATE_LANCASHIRE.region_state:ENG = { set_state_owner = c:EGA }
+			}
+			if = {
+				limit = { exists = s:STATE_MIDLANDS.region_state:ENG }
+				s:STATE_MIDLANDS.region_state:ENG = { set_state_owner = c:EGA }
+			}
+			if = {
+				limit = { exists = s:STATE_EAST_ANGLIA.region_state:ENG }
+				s:STATE_EAST_ANGLIA.region_state:ENG = { set_state_owner = c:EGA }
+			}
+			if = {
+				limit = { exists = s:STATE_WEST_COUNTRY.region_state:ENG }
+				s:STATE_WEST_COUNTRY.region_state:ENG = { set_state_owner = c:EGA }
+			}
+			if = {
+				limit = { exists = s:STATE_ULSTER.region_state:ENG }
+				s:STATE_ULSTER.region_state:ENG = { set_state_owner = c:EGA }
+			}
+			if = {
+				limit = { exists = s:STATE_MUNSTER.region_state:ENG }
+				s:STATE_MUNSTER.region_state:ENG = { set_state_owner = c:EGA }
+			}
+			if = {
+				limit = { exists = s:STATE_LEINSTER.region_state:ENG }
+				s:STATE_LEINSTER.region_state:ENG = { set_state_owner = c:EGA }
+			}	
+			if = {
+				limit = { exists = s:STATE_CONNAUGHT.region_state:ENG }
+				s:STATE_CONNAUGHT.region_state:ENG = { set_state_owner = c:EGA }
+			}
+			if = {
+				limit = { exists = s:STATE_WALES.region_state:ENG }
+				s:STATE_WALES.region_state:ENG = { set_state_owner = c:EGA }
+			}			
+		}
+		set_global_variable = england_civ_war_start
+	}
+
+	option = {
+		name = england_civ_war.2.a
+		default_option = yes
+		
+	}
+}
+
+england_civ_war.3 = {
+	title = england_civ_war.3.t
+	desc = england_civ_war.3.d
+	flavor = england_civ_war.3.f
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+	
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:EGA = {
+			create_diplomatic_play = {
+				name = civ_war_eng
+				war = yes
+				type = dp_revolution
+				target_state = s:STATE_YORKSHIRE.region_state:ENG
+			}
+		}
+	}
+
+	option = {
+		name = england_civ_war.3.a
+		default_option = yes
+		set_global_variable = england_civ_war_start
+		every_scope_state = {
+			set_state_type = incorporated
+		}
+	}	
+	
+}

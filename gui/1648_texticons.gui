@@ -1,0 +1,131 @@
+texticon = {
+	icon = spear
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/spear.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = fire_gun
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/fire_gun.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+
+texticon = {
+	icon = gun_flintlock
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/small_arms.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = gun_lighting
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/gun_lighting.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = gun_back
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/gun_back.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = gun_auto
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/gun_auto.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = stone_cannon
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/stone_cannon.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = early_cannon
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/early_cannon.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = armstrong_artillery
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/armstrong_artillery.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = field_artillery
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/field_artillery.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+####
+
+texticon = {
+	icon = liquor
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/liquor.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = tobacco
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/tobacco.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = services
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/services.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

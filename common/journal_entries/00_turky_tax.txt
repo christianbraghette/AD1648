@@ -1,0 +1,28 @@
+﻿je_turky_tax = { #
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		is_at_war = no
+		OR = {
+			has_law = law_type:law_freedom_of_conscience
+			has_law = law_type:law_total_separation
+		}
+	}
+
+	on_complete = {
+		remove_modifier = cizye_tax_1
+	}
+
+	on_monthly_pulse = {
+	}
+
+	fail = {
+	}
+
+	on_fail = {
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}

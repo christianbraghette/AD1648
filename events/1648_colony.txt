@@ -1,0 +1,324 @@
+﻿namespace = 1648_colony
+
+# Start event for obsessed country
+1648_colony.1 = {
+	type = country_event
+	placement = ROOT
+	hidden = yes
+
+	title = 1648_colony.1.t
+	desc = 1648_colony.1.d
+	flavor = 1648_colony.1.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:ENG
+		this = c:ENG
+		NOT = { exists = c:EGA }
+		NOT = { exists = c:NEN }
+		NOT = {	has_global_variable = eba_rebirth }
+	}
+
+	immediate = {
+		set_global_variable = eba_rebirth
+		limit = { exists = s:STATE_VIRGINIA.region_state:ENG }
+		create_country = {
+			tag = NEN
+			origin = this
+			state = s:STATE_VIRGINIA.region_state:ENG
+		}
+		if = {
+			limit = { exists = s:STATE_MASSACHUSETTS.region_state:ENG }
+			s:STATE_MASSACHUSETTS.region_state:ENG = { set_state_owner = c:NEN }
+		}		
+		create_diplomatic_pact = {
+			country = c:NEN
+			type = dominion
+		}
+	}
+}
+
+##判斷墨西哥是否為附庸
+1648_colony.2 = {
+	type = country_event
+	placement = ROOT
+	hidden = yes
+
+	title = 1648_colony.1.t
+	desc = 1648_colony.1.d
+	flavor = 1648_colony.1.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		c:PEU = { is_player = no }
+		c:MEX = { is_subject_of = c:SPA }
+		c:SPA = { is_at_war = yes }
+		c:MEX = { has_technology_researched = great_revolution }
+		NOT = {	has_global_variable = mex_revolution }
+	}
+
+	immediate = {
+		set_global_variable = mex_revolution
+		c:MEX = {
+			trigger_event = { id = 1648_colony.4 days = 180 }
+		}
+	}
+}
+
+##判斷祕魯總督區是否為附庸
+1648_colony.3 = {
+	type = country_event
+	placement = ROOT
+	hidden = yes
+
+	title = 1648_colony.1.t
+	desc = 1648_colony.1.d
+	flavor = 1648_colony.1.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+		c:PEU = { is_player = no }
+		c:PEU = { is_subject_of = c:SPA }
+		c:SPA = { is_at_war = yes }
+		c:MEX = { has_technology_researched = great_revolution }
+		NOT = {	has_global_variable = spe_revolution }
+	}
+
+	immediate = {
+		set_global_variable = spe_revolution
+		c:PEU = {
+			trigger_event = { id = 1648_colony.5 days = 90 }
+		}
+	}
+}
+
+##獨立
+1648_colony.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = 1648_colony.4.t
+	desc = 1648_colony.4.d
+	flavor = 1648_colony.4.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_CUBA.region_state:MEX }
+			create_country = { 
+				tag = CUB
+				origin = this
+				state = s:STATE_CUBA.region_state:MEX
+			}
+			c:SPA = {
+				create_diplomatic_pact = {
+					country = c:CUB
+					type = dominion
+				}
+			}
+		}
+	}
+
+	option = {
+		name = 1648_colony.4.a
+		default_option = yes
+		C:MEX = {
+			create_diplomatic_play = {
+				name = ind_war			
+				war = yes
+				type = dp_independence
+				target_state = s:STATE_CASTILE.region_state:SPA
+			}	
+		}
+		C:CUB = {
+			create_diplomatic_play = {
+				name = ind_war			
+				war = yes
+				type = dp_independence
+				target_state = s:STATE_CASTILE.region_state:SPA
+			}	
+		}
+		ai_chance = {
+			base = 100
+		}
+		c:SPA = {
+			trigger_event = { id = 1648_colony.6 }
+		}
+	}
+	option = {
+		name = 1648_colony.4.b
+	}
+}
+
+1648_colony.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = 1648_colony.4.t
+	desc = 1648_colony.4.d
+	flavor = 1648_colony.4.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_ANTIOQUIA.region_state:PEU }
+			create_country = { 
+				tag = CLM
+				origin = this
+				state = s:STATE_ANTIOQUIA.region_state:PEU
+			}
+			c:CLM = { save_scope_as = scope_CLM }
+			if = {
+				limit = { exists = s:STATE_ZULIA.region_state:PEU }
+				s:STATE_ZULIA.region_state:PEU = { set_state_owner = c:CLM }
+			}
+			if = {
+				limit = { exists = s:STATE_MIRANDA.region_state:PEU }
+				s:STATE_MIRANDA.region_state:PEU = { set_state_owner = c:CLM }
+			}
+			if = {
+				limit = { exists = s:STATE_GUAVIARE.region_state:PEU }
+				s:STATE_GUAVIARE.region_state:PEU = { set_state_owner = c:CLM }
+			}
+			if = {
+				limit = { exists = s:STATE_CAUCA.region_state:PEU }
+				s:STATE_CAUCA.region_state:PEU = { set_state_owner = c:CLM }
+			}
+			if = {
+				limit = { exists = s:STATE_ECUADOR.region_state:PEU }
+				s:STATE_ECUADOR.region_state:PEU = { set_state_owner = c:CLM }
+			}
+			if = {
+				limit = { exists = s:STATE_PASTAZA.region_state:PEU }
+				s:STATE_PASTAZA.region_state:PEU = { set_state_owner = c:CLM }
+			}
+			if = {
+				limit = { exists = s:STATE_BOLIVAR.region_state:PEU }
+				s:STATE_BOLIVAR.region_state:PEU = { set_state_owner = c:CLM }
+			}
+			c:SPA = {
+				create_diplomatic_pact = {
+					country = c:CLM
+					type = dominion
+				}
+			}
+		}
+	}
+
+	option = {
+		name = 1648_colony.4.a
+		default_option = yes
+		C:PEU = {
+			create_diplomatic_play = {
+				name = ind_war			
+				war = yes
+				type = dp_independence
+				target_state = s:STATE_CASTILE.region_state:SPA
+			}	
+		}
+		C:CLM = {
+			create_diplomatic_play = {
+				name = ind_war			
+				war = yes
+				type = dp_independence
+				target_state = s:STATE_CASTILE.region_state:SPA
+			}	
+		}
+		ai_chance = {
+			base = 100
+		}
+		c:SPA = {
+			trigger_event = { id = 1648_colony.6 }
+		}
+	}
+	option = {
+		name = 1648_colony.4.b
+	}
+}
+
+##通知西班牙
+1648_colony.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = 1648_colony.6.t
+	desc = 1648_colony.6.d
+	flavor = 1648_colony.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = 1648_colony.6.a
+	}
+}

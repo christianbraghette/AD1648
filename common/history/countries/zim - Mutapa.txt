@@ -1,0 +1,22 @@
+﻿COUNTRIES = {
+	c:ZIM = {	
+		effect_starting_technology_tier_7_tech = yes
+		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_no_colonial_affairs
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_no_health_system
+		activate_law = law_type:law_no_home_affairs
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_consumption_based_taxation
+		activate_law = law_type:law_trade_limit	
+	}
+}

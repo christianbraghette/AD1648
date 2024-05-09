@@ -1,0 +1,2050 @@
+﻿BUILDINGS={
+	s:STATE_DZUNGARIA={
+		region_state:DZU={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_TIANSHAN={
+		region_state:YAR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_SICHUAN={
+		region_state:MIN={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_workshop"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_beer_no" "pm_1648_wine_simple" }
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	
+	s:STATE_YUNNAN={
+		region_state:MIN={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_iron_mine"
+				level=4
+				reserves=1
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_arms_industry"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_simple" }
+			}
+		}	
+	}
+
+	s:STATE_GUIZHOU={
+		region_state:MIN={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	
+	s:STATE_SHAOZHOU={
+		region_state:MIN={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_iron_mine"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ALXA={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_HINGGAN={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_GUANGXI={
+		region_state:MIN={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_paper_mills"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_BEIJING={
+		region_state:CHI={
+			create_building={
+				building="building_forbidden_city"
+				level=1
+			}
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=5
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_textile_mills"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes_1" }
+			}
+			create_building={
+				building="building_arms_industry"
+				level=5
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_simple" }
+			}
+		}
+	}
+	s:STATE_OUTER_MANCHURIA={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_SOUTHERN_MANCHURIA={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}			
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_iron_mine"
+				level=4
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_NORTHERN_MANCHURIA={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_coal_mine"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_SHANXI={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_arms_industry"
+				level=5
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}			
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_coal_mine"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_iron_mine"
+				level=4
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_NINGXIA={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+		}
+	}
+	s:STATE_GANSU={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_XIAN={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=2
+				reserves=1
+			}			
+		}
+	}
+	s:STATE_QINGHAI={
+		region_state:TIB={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_CHONGQING={
+		region_state:MIN={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_furn_1" }
+			}
+			create_building={
+				building="building_textile_mills"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes_1" }
+			}
+		}
+	}
+	s:STATE_GUANGDONG={
+		region_state:MIN={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes_1" }
+			}
+			create_building={
+				building="building_naval_base"
+				level=3
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_simple" }
+			}
+		}
+		region_state:POR={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+		}
+	}
+	s:STATE_FUJIAN={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}	
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=5
+				reserves=1
+			}
+			create_building={
+				building="building_silk_plantation"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ZHEJIANG={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_silk_plantation"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes_1" }
+			}
+		}
+	}
+	s:STATE_JIANGSU={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_silk_plantation"
+				level=3
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes_1" }
+			}
+		}
+	}
+	s:STATE_NANJING={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_naval_base"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+			create_building={
+				building="building_paper_mills"
+				level=3
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_silk_plantation"
+				level=3
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_handle_furn_1" }
+			}
+		}
+	}
+	s:STATE_HENAN={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+		}
+	}
+	s:STATE_ZHILI={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_simple" }
+			}
+		}
+	}
+	s:STATE_JIANGXI={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_arms_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+		}
+	}
+	s:STATE_SOUTHERN_ANHUI={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_paper_mills"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_NORTHERN_ANHUI={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_silk_plantation"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=5
+				reserves=1
+			}
+		}
+	}
+	s:STATE_WESTERN_HUBEI={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_silk_plantation"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_workshop"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_beer_no" "pm_1648_wine_simple" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+		}
+	}
+	s:STATE_EASTERN_HUBEI={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_silk_plantation"
+				level=8
+				reserves=1
+			}
+		}
+	}
+	s:STATE_HUNAN={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_FORMOSA={
+		region_state:DEI={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+		}
+		region_state:YUZ={
+		}		
+	}
+	s:STATE_SHANDONG={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}		
+			create_building={
+				building="building_fishing_wharf"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+		}
+	}
+	s:STATE_SUZHOU={
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}		
+			create_building={
+				building="building_fishing_wharf"
+				level=4
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_textile_mills"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes_1" }
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=5
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_SHENGJING= {
+		region_state:CHI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_gov_server_simple" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}		
+			create_building={
+				building="building_naval_base"
+				level=3
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_handle_furn_1" }
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}	
+		}
+	}
+	
+	
+	s:STATE_ULIASTAI={
+		region_state:MGL={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_URGA={
+		region_state:MGL={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_CAMBODIA={
+		region_state:CAM={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_angkor_wat"
+				level=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_iron_mine"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=4
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+		}
+	}
+	s:STATE_BANGKOK={
+		region_state:SIA={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_arms_industry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+		}
+	}
+	s:STATE_TONKIN={
+		region_state:DAI={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ANNAM={
+		region_state:RAM={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+		}
+	}
+	s:STATE_MEKONG={
+		region_state:CAM={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_LAOS={
+		region_state:LAO={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_coal_mine"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}				
+		}
+	}
+	s:STATE_CHIANG_MAI={
+		region_state:SIA={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}	
+		}
+	}
+	s:STATE_NAKHON_RATCHASIMA={
+		region_state:SIA={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_TENASSERIM={
+		region_state:SIA={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+		}
+	}
+	s:STATE_KACHIN={
+		region_state:BUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_SHAN_STATES={
+		region_state:BUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_BURMA={
+		region_state:BUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_arms_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+		}
+	}
+	s:STATE_PEGU={
+		region_state:BIC={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+		}
+	}
+	s:STATE_SAKHALIN={
+		region_state:SKH={
+		}
+	}
+	s:STATE_HOKKAIDO={
+		region_state:JAP={
+		}
+		region_state:AIN={
+		}
+	}
+	s:STATE_TOHOKU={
+		region_state:JAP={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_whaling_station"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_KANTO={
+		region_state:JAP={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=3
+				reserves=1
+			}			
+		}
+	}
+	s:STATE_CHUBU={
+		region_state:JAP={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_logging_camp"
+				level=4
+				reserves=1
+			}	
+			create_building={
+				building="building_tea_plantation"
+				level=2
+				reserves=1
+			}	
+		}
+	}
+	s:STATE_KANSAI={
+		region_state:JAP={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+		}
+	}
+	s:STATE_KYUSHU={
+		region_state:JAP={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}	
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_RYUKYU_ISLANDS={
+		region_state:JAP={
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+		}
+	}
+	s:STATE_CHUGOKU={
+		region_state:JAP={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=3
+				reserves=1
+			}
+		}
+	}
+	s:STATE_SHIKOKU={
+		region_state:JAP={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes_1" }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_tea_plantation"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_SEOUL={
+		region_state:KOR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+		}
+	}
+	s:STATE_BUSAN={
+		region_state:KOR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+		}
+	}
+	s:STATE_YANGHO={
+		region_state:KOR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=3
+				reserves=1
+			}	
+		}
+	}
+	s:STATE_SARIWON={
+		region_state:KOR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+		}
+	}
+	s:STATE_PYONGYANG={
+		region_state:KOR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_army_square" "pm_army_spear" "pm_stone_artillery" "pm_human_scouts" "pm_cavalry_charge"}
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_iron_mine"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+﻿COUNTRIES = {
+	c:FRA = {
+				
+		effect_starting_technology_tier_1_tech = yes
+
+		set_tax_level = medium
+		
+		add_taxed_goods = g:liquor
+		effect_starting_pop_literacy_baseline = yes
+		add_technology_researched = base_home_police
+		# Laws
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_frontier_colonization		
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_no_health_system
+		activate_law = law_type:law_no_home_affairs
+		activate_law = law_type:law_serfdom_free
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_mercantilism
+
+			
+		ig:ig_landowners = { # Victor de Broglie was Prime Minister until February 22, 1836
+			add_ruling_interest_group = yes
+		}
+		
+		
+		ig:ig_devout = { 
+			set_interest_group_name = ig_catholic_church 
+		}
+
+		ig:ig_intelligentsia = {
+			set_ig_suppression = yes
+		}
+
+		#add_modifier = {
+		#	name = modifier_haitian_independence_payments
+		#}
+		set_variable = {
+			name = orleanist_restoration_var
+		}
+	}
+}

@@ -1,0 +1,832 @@
+﻿BUILDINGS={
+	s:STATE_NEJD={
+		region_state:NEJ={
+			create_building={
+				building="building_textile_mills"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+		}
+	}
+	s:STATE_OMAN={
+		region_state:OMA={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_textile_mills"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}	
+		}
+	}
+	s:STATE_ABU_DHABI={
+		region_state:OMA={
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+		}
+		region_state:TUR={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+		region_state:PER={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_YEMEN={
+		region_state:YEM={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_spear" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_coffee_plantation"
+				level=3
+				reserves=1
+			}
+		}
+	}
+	s:STATE_HEDJAZ={
+		region_state:HDJ={
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_HAIL={
+		region_state:TUR={
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_CYPRUS={
+		region_state:TUR={
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
+		}
+	}
+	s:STATE_TRANSJORDAN={
+		region_state:TUR={
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_PALESTINE={
+		region_state:TUR={
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_LEBANON={
+		region_state:TUR={
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+		}
+	}
+	s:STATE_SYRIA={
+		region_state:TUR={
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}		
+		}
+	}
+	s:STATE_ALEPPO={
+		region_state:TUR={
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+		}
+	}
+	s:STATE_BAGHDAD={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
+			}
+		}
+	}
+	s:STATE_MOSUL={
+		region_state:TUR={
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_DEIR_EZ_ZOR={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_BASRA={
+		region_state:TUR={
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_FARS={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_no_specialists"}
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_simple" }
+			}
+			# Re-add monument here
+
+		}
+	}
+	s:STATE_LARISTAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+		}
+	}
+	s:STATE_SISTAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}				
+		}
+	}
+	s:STATE_KHORASAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_no_specialists"}
+			}
+			create_building={
+				building="building_tooling_workshops"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}			
+		}
+	}
+	s:STATE_KHUZESTAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_shipyards"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding" "pm_merchant_guilds_building_shipyards" }
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_no_specialists"}
+			}
+			create_building={
+				building="building_textile_mills"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_clothes" }
+			}
+		}
+	}
+	s:STATE_ISFAHAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_iron_mine"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_MAZANDARAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_handle_furn" }
+			}
+			create_building={
+				building="building_artillery_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_cannon_simple" }
+			}			
+		}
+	}
+	s:STATE_IRAKAJEMI={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_no_specialists"}
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+			create_building={
+				building="building_workshop"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_1648_beer_simple" "pm_1648_wine_simple" }
+			}
+		}
+	}
+	s:STATE_TABRIZ={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_no_specialists"}
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+			create_building={
+				building="building_logging_camp"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_LURISTAN={
+		region_state:PER={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_workshop"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_beer_simple" "pm_1648_wine_simple" }
+			}
+		}
+	}
+	s:STATE_HUDAVENDIGAR={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_no_specialists"}
+			}
+			create_building={
+				building="building_naval_base"
+				level=1
+				reserves=1
+			}			
+			create_building={
+				building="building_fishing_wharf"
+				level=2
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+		}
+	}
+	s:STATE_AYDIN={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+		}
+	}
+	s:STATE_KONYA={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_KASTAMONU={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_1648_weapon_gun" }
+			}
+		}
+	}
+	s:STATE_DIYARBAKIR={
+		region_state:TUR={
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ADANA={
+		region_state:TUR={
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_TRABZON={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_fishing_wharf"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_near_fishing" }
+			}
+			create_building={
+				building="building_port"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_early_port" }
+			}
+			create_building={
+				building="building_iron_mine"
+				level=2
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ERZURUM={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_KARS={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+		}
+	}
+	s:STATE_ANKARA={
+		region_state:TUR={
+			create_building={
+				building="building_government_administration"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_road"
+				level=1
+				reserves=1
+			}
+			create_building={
+				building="building_barracks"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_irregular_infantry" "pm_army_firegun" "pm_early_artillery" "pm_human_scouts" "pm_no_specialists"}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

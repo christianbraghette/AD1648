@@ -1,0 +1,44 @@
+﻿COUNTRIES = {
+	c:GNG = {
+		effect_starting_technology_tier_4_tech = yes
+		
+		add_technology_researched = sericulture
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_no_colonial_affairs
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_no_health_system
+		activate_law = law_type:law_no_home_affairs
+		activate_law = law_type:law_serfdom_free
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_trade_limit
+
+		ig:ig_landowners = { 
+			set_interest_group_name = ig_scholar_officials
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_scholar_paternalistic
+		}
+		
+		ig:ig_intelligentsia = { 
+			set_interest_group_name = ig_literati
+			remove_ideology = ideology_anti_clerical
+		}
+		
+		ig:ig_devout = {
+			set_interest_group_name = ig_confucian
+			remove_ideology = ideology_pious
+			remove_ideology = ideology_moralist
+			add_ideology = ideology_confucian
+		}
+	}
+}

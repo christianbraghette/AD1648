@@ -1,0 +1,59 @@
+﻿je_england_civ_war = { #清教徒革命
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		OR = {
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_autocracy
+		}				
+	}
+
+	on_complete = {
+		custom_tooltip = puritan_revolution_ends
+		if = {
+			limit = {
+				exists = c:ENG
+				c:ENG = ROOT
+			}
+			trigger_event = { id = england_civ_war.1 }
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					exists = c:ENG
+					c:ENG = ROOT
+					ruler = { has_variable = puritan_revolution }
+				}
+				random_list = {
+					1 = { }
+					1 = {
+						trigger_event = { id = england_civ_war.2 }
+					}
+				}
+			}
+		}
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = england_civ_war_start
+			has_global_variable =  england_civ_war_start
+		}
+	}
+
+	on_fail = {
+		c:EGA = {
+			trigger_event = { id = england_civ_war.3 }
+		}	
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}

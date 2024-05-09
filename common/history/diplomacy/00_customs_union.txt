@@ -1,0 +1,181 @@
+﻿DIPLOMACY = {
+	c:VEN = {
+		create_diplomatic_pact = {
+			country = c:MLT
+			type = customs_union
+		}
+	}
+	c:FRA = {
+		create_diplomatic_pact = {
+			country = c:CAT
+			type = customs_union
+		}
+	}
+	c:AUS = {
+		create_diplomatic_pact = {
+			country = c:SWI
+			type = customs_union
+		}
+	}
+	c:OMA = {
+		create_diplomatic_pact = {
+			country = c:YEM
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:NEJ
+			type = customs_union
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:CIR
+			type = customs_union
+		}
+	}
+	c:KAZ = {
+		create_diplomatic_pact = {
+			country = c:KHI
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:BUK
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:DZU
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:YAR
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:MGL
+			type = customs_union
+		}
+	}
+	c:NEP = {
+		create_diplomatic_pact = {
+			country = c:SIK
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:BHU
+			type = customs_union
+		}
+	}
+	c:SIA = {
+		create_diplomatic_pact = {
+			country = c:LAO
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:CAM
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:RAM
+			type = customs_union
+		}
+	}
+	c:TRA = {
+		create_diplomatic_pact = {
+			country = c:MYS
+			type = customs_union
+		}
+	}	
+	#####非洲集团
+	c:SIL = {
+		create_diplomatic_pact = {
+			country = c:KRT
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:SGU
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:MSN
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:MDK
+			type = customs_union
+		}
+	}
+	c:SOK = {
+		create_diplomatic_pact = {
+			country = c:ASH
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:DAH
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:OYO
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:BEN
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:HAU
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:BOR
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:BGI
+			type = customs_union
+		}
+	}
+	c:ETH = {
+		create_diplomatic_pact = {
+			country = c:FUN
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:WAD
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:HAR
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:GLD
+			type = customs_union
+		}
+	}
+	c:BUG = {
+		create_diplomatic_pact = {
+			country = c:ACH
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:BNY
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:ANK
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:KRG
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:RWD
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:BRD
+			type = customs_union
+		}
+	}
+}

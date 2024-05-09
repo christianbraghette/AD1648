@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:DOG = {
+		create_character = {
+			first_name = chengkong
+			last_name = Zhang
+			ruler = yes
+			birth_date = 1624.8.27
+			#dna = dna_daoguang_emperor
+			culture = cu:han
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				brave
+			}
+		}
+	}
+}

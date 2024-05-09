@@ -1,0 +1,102 @@
+﻿# goods types, organized by category
+
+# prestige_factor							Base prestige for occupying the rank MIN_PRESTIGE_AWARD spot on the goods production leaderboard. x2 awarded for every rank above the minimum.
+
+############
+# MILITARY #
+############
+spear = {
+	texture = "gfx/interface/icons/goods_icons/spear.dds"
+	cost = 20
+	category = military
+	tradeable = no
+	traded_quantity = 1
+	prestige_factor = 1
+}
+
+fire_gun = {
+	texture = "gfx/interface/icons/goods_icons/fire_gun.dds"
+	cost = 30
+	category = military
+	traded_quantity = 2
+	prestige_factor = 3
+}
+
+gun_flintlock = {
+	texture = "gfx/interface/icons/goods_icons/small_arms.dds"
+	cost = 40
+	category = military
+	traded_quantity = 6
+	prestige_factor = 5
+}
+
+gun_back = {
+	texture = "gfx/interface/icons/goods_icons/gun_back.dds"
+	cost = 50
+	category = military
+	traded_quantity = 6
+	prestige_factor = 5
+}
+
+gun_lighting = {
+	texture = "gfx/interface/icons/goods_icons/gun_lighting.dds"
+	cost = 45
+	category = military
+	traded_quantity = 6
+	prestige_factor = 5
+}
+
+gun_auto = {
+	texture = "gfx/interface/icons/goods_icons/gun_auto.dds"
+	cost = 60
+	category = military
+	traded_quantity = 7
+	prestige_factor = 7
+}
+
+####cannon########
+stone_cannon = {
+	texture = "gfx/interface/icons/goods_icons/stone_cannon.dds"
+	cost = 20
+	category = military
+	tradeable = no
+	traded_quantity = 3
+	prestige_factor = 1
+}
+
+##早期火炮
+early_cannon = {
+	texture = "gfx/interface/icons/goods_icons/early_cannon.dds"
+	cost = 30
+	category = military
+	traded_quantity = 6
+	prestige_factor = 3
+}
+
+##佳農炮
+artillery = {
+	texture = "gfx/interface/icons/goods_icons/artillery.dds"
+	cost = 40
+	category = military
+	
+	prestige_factor = 5
+	traded_quantity = 7
+	convoy_cost_multiplier = 1.5
+}
+
+##後膛火炮
+armstrong_artillery = {
+	texture = "gfx/interface/icons/goods_icons/armstrong_artillery.dds"
+	cost = 50
+	category = military
+	traded_quantity = 7
+	prestige_factor = 7
+}
+##野戰火炮
+field_artillery = {
+	texture = "gfx/interface/icons/goods_icons/field_artillery.dds"
+	cost = 60
+	category = military
+	traded_quantity = 6
+	prestige_factor = 9
+}

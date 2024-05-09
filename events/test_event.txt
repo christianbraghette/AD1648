@@ -1,0 +1,47 @@
+namespace = 1648_event
+
+1648_event.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = urk_event.1.t
+	desc = urk_event.1.d
+	flavor = urk_event.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+	immediate = {	
+		
+	}
+
+	option = {
+		name = qing_lord.9.a
+		ai_chance = {
+			base = 1
+		}
+		s:STATE_GUANGDONG.region_state:MIN = { set_state_owner = c:POR }
+	}
+	option = {
+		name = spain_crisis.3.a
+		default_option = yes
+		c:FRA = {
+			create_diplomatic_play = {
+				name = Battle_of_Guararapes
+		
+				target = LOM
+				
+				type = dp_transfer_subject
+			}
+		}	
+	}	
+}

@@ -1,0 +1,31 @@
+﻿CHARACTERS = {
+	c:CHI = {
+		create_character = {
+			first_name = Shunzhi
+			last_name = "Aisin_Gioro" # Not used by the emperor himself but there's got to be something here
+			ruler = yes
+			birth_date = 1638.3.15
+			dna = dna_daoguang_emperor
+			culture = cu:manchu
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				innovative brave
+			}
+		}
+		create_character = {
+			first_name = Dorgon
+			last_name = "Aisin_Gioro"
+			birth_date = 1612.11.17
+			is_general = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			hq = region_north_china
+			commander_rank = commander_rank_2
+			traits = {
+				innovative
+			}
+		}
+	}
+}

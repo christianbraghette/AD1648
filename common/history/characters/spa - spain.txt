@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:SPA = {
+		create_character = {
+			first_name = "Felipe_IV"
+			last_name = "von_Habsburg"
+			ruler = yes
+			birth_date = 1605.4.8
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+				bigoted
+			}
+		}
+	}		
+}

@@ -1,0 +1,286 @@
+﻿#HRE States
+BPR = {
+	color = { 125 125 125 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_BRANDENBURG
+}
+
+PRP = {
+	color = { 85 85 170 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_EAST_PRUSSIA
+}
+
+RPL = {
+	color = { 130 150 120 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_RHINELAND
+	is_named_from_capital = yes
+}
+
+TRR = {
+	color = { 100 210 195 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_NORTH_RHINE
+	is_named_from_capital = yes
+}
+
+MUN = {
+	color = { 130 110 210 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_WESTPHALIA
+	is_named_from_capital = yes
+}
+
+KHO = {
+    color = { 20 30 50 }
+	
+    country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { khoisan }
+	capital = STATE_NORTHERN_CAPE
+	is_named_from_capital = yes
+}
+
+INI ={
+ 	color = { 180 150 100 }
+	
+	country_type = decentralized
+	
+	cultures = { inuit }
+	capital = STATE_NUNAVUT
+	is_named_from_capital = yes
+}
+
+MIN = { 
+	color = { 150 30 30 }
+	country_type = unrecognized
+	tier = empire
+	cultures = { han }
+	
+	capital = STATE_GUANGDONG
+}
+
+
+YAR = {
+ 	color = { 150 150 10 }
+	
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { uighur }
+	capital = STATE_TIANSHAN
+}
+
+DZU = {
+ 	color = { 10 150 110 }
+	
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { uighur }
+	capital = STATE_DZUNGARIA 
+}
+
+FUN = {
+ 	color = { 40 45 40 }
+	
+	country_type = unrecognized
+	tier = principality
+	
+	cultures = { sudanese }
+	capital = STATE_KORDOFAN
+}
+
+GEN = {
+ 	color = { 255 240 40 }
+	
+	country_type = recognized
+	tier = principality
+	
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+
+GWC = {
+ 	color = { 185 160 80 }
+	
+	country_type = colonial
+	tier = principality
+	
+	cultures = { dutch }
+	capital = STATE_PERNAMBUCO
+}
+
+EGA = {
+	color = { 80 1 1 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { british }
+	capital = STATE_HOME_COUNTIES
+}
+
+SAV = {
+	color = { 235 196 231 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	capital = STATE_PIEDMONT
+	cultures = { north_italian francoprovencal }
+}
+
+CEY = {
+	color = hsv360{ 0  70  61 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { portuguese }
+	capital = STATE_CEYLON
+}
+
+CEE = {
+	color = { 255  211  56 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { cree }
+	capital = STATE_QUEBEC
+	is_named_from_capital = yes
+}
+
+RAM = {
+	color = { 95  125  145 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { vietnamese }
+	capital = STATE_MEKONG
+}
+
+ALG = {
+	color = { 138  80 126 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { algonquian }
+	capital = STATE_OREGON
+}
+
+MSC = { # Muscogee
+	color = { 108 139 208 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { muskogean }
+	
+	capital = STATE_FLORIDA
+}
+
+MNT = {
+	color = { 211  220  178 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+}
+
+LOR = {
+	color = { 128  202  129 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { french }
+	capital = STATE_EMILIA
+}
+
+DEL = {
+	color = { 211  220  178 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { algonquian }
+	capital = STATE_DELAWARE
+}
+
+PUE = { # Pueblo
+	color = { 162 128 8 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { pueblo }
+	
+	capital = STATE_NEW_MEXICO
+}
+
+CHE = {
+	color = { 105  145  40 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { cherokee }
+	capital = STATE_ARKANSAS
+}
+
+HKN = {
+	color = { 105  145  40 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { hokan }
+	capital = STATE_CALIFORNIA
+}

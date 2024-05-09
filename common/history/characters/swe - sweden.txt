@@ -1,0 +1,22 @@
+﻿CHARACTERS = {
+	c:SWE = {
+		create_character = {
+			# Charles XIV John of Sweden, born Jean Bernadotte, one of Napoleon's former marshals
+			first_name = "Kristina"
+			last_name = "Augusta"
+			ruler = yes
+			birth_date = 1626.12.18
+			culture=cu:french
+			female=yes
+    		religion = rel:protestant
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				ambitious 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+	}
+}

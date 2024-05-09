@@ -1,0 +1,19 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:PLC = {
+		create_diplomatic_play = {
+			name = ukr_revolution
+		
+			target_state = s:STATE_KIEV.region_state:UKR
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:UKR
+				type = independence
+				target_state = s:STATE_VOLHYNIA.region_state:PLC
+			}			
+		}			
+	}	
+}

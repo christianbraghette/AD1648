@@ -1,0 +1,43 @@
+﻿COUNTRIES = {
+	c:SPE = {
+		effect_starting_technology_tier_5_tech = yes
+		add_technology_researched = tech_colony_gov
+		add_technology_researched = wine_farm	
+		add_technology_researched = 1648_cloth_high	
+		add_technology_researched = tech_base_plant
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_no_health_system
+		activate_law = law_type:law_no_home_affairs
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_police
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_mercantilism
+		
+		ig:ig_armed_forces = { # Barragan was head of state, on paper, but Antonio Lopez de Santa Anna had his finger in every political pie
+			add_ruling_interest_group = yes
+			add_ideology = ideology_caudillismo
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_caudillismo
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}
